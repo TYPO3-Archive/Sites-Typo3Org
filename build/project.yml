@@ -4,7 +4,8 @@ build: build
 svn_base: 'http://svn.t3o-relaunch-week.de/'
 svn_method: checkout
 typo3:
-  svn_src: 'http://svn.t3o-relaunch-week.de/git.typo3.org/Core/tags/TYPO3_4-5-22+4704'
+  git: git://git.typo3.org/TYPO3v4/Core.git
+  git_tag: TYPO3_4-5-22 
   dir: typo3_src-4.5
 migrator:
   file: /var/lib/jenkins/t3deploy/contrib/migrator/settings/projects/t3org/deployment_environments.inc.php
