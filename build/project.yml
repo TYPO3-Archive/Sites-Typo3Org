@@ -7,8 +7,7 @@ typo3:
   svn_src: 'http://svn.t3o-relaunch-week.de/git.typo3.org/Core/tags/TYPO3_4-5-22+4704'
   dir: typo3_src-4.5
 migrator:
-  svn_src: 'http://svn.t3o-relaunch-week.de/private/t3deploy/contrib/migrator'
-  dir: migrator
+  file: /var/lib/jenkins/t3deploy/contrib/migrator/settings/projects/t3org/deployment_environments.inc.php
 backup:
   files:
     items:
@@ -463,47 +462,3 @@ packaging:
     - '~(\.log|todo\.txt|readme\.txt|temp_CACHED_(.)*\.php|ChangeLog|ENABLE_INSTALL_TOOL|system_installed\.txt)$~i'
     - ~tests/~i
     - ~\.(idea|svn|_.DS_Store)~
-deploymentContext:
-  usual:
-    packaging:
-      systems:
-        t3o-latest:
-          backup: production
-        t3o-confmaster:
-          backup: production
-        t3o-production:
-          backup: production
-  generic:
-    backup:
-      database:
-        setup:
-          import:
-            be_users:
-              system: fixtures
-            fe_users:
-              system: fixtures
-            tt_news_cache:
-              system: fixtures
-            tt_news_cache_tags:
-              system: fixtures
-    packaging:
-      ignorePaths:
-        - ~^build~
-        - ~^selenium~
-        - ~^delta~
-        - ~^temp~
-        - ~conf/.htpasswd~
-        - ~^deployment~
-        - '~htdocs/(services|typo3temp.*)~'
-        - '~htdocs/fileadmin/(extensionFiles|ter)/.*~'
-        - '~htdocs/fileadmin/TYPO3_4-7/.*~'
-        - '~(\.log|todo\.txt|readme\.txt|temp_CACHED_(.)*\.php|ChangeLog|ENABLE_INSTALL_TOOL|system_installed\.txt)$~i'
-        - ~tests/~i
-        - ~\.(idea|_.DS_Store)~
-      systems:
-        t3o-generic:
-          backup: production
-        t3o-testing1:
-          backup: production
-        t3o-vagrant:
-          backup: production
