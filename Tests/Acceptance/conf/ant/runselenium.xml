@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="selenium" default="build" basedir="../../../../">
+	
+	<!-- set ${configuration.phpunit} in Jenkins to enviorment xml-->	
+	
+	<!-- Default Call; specify the order of calls -->
+	<target name="build" depends="clean, test_suite" />	
+
+	<!-- clean up the old xml Logs -->
+	<target name="clean">
+		<mkdir dir="${basedir}/build/logs" />
+		<mkdir dir="${basedir}/build/logs/detail" />
+		<delete>
+			<fileset dir="${basedir}/build/logs">
+				<include name="*.xml" />
+			</fileset>
+			<fileset dir="${basedir}/build/logs/detail">
+				<include name="*.xml" />
+			</fileset>
+		</delete>
+	</target>
+
+	<!-- Testsuite: parallel calls all Tests; threadCount specify how many threads should run parallel  (up to down) -->	
+	<target name="test_suite" >		
+	 	<parallel threadCount="1">
+	 		<parallel threadCount="2">
+		 		<antcall target="websiterunstest" />
+	 			<!--<antcall target="backendtypo3login" />-->	 			
+	 		</parallel>
+	 		<antcall target="combinelogs" />
+	 	</parallel>
+		
+	</target>
+	
+	<!-- combine the single Test logs to one -->
+	
+	<target name="combinelogs">
+		<concat destfile="${basedir}/build/logs/log.xml" force="yes">			
+			<fileset dir="${basedir}/build/logs/detail" includes="*.xml" />
+			<filterchain>				
+				<linecontains negate="true">
+					<contains value='?xml version="1.0" encoding="UTF-8"'/>
+				</linecontains>		
+			</filterchain>		
+		</concat>	
+		<concat destfile="${basedir}/build/logs/phpunit.xml" force="yes" fixlastline="yes">			
+			<filelist dir="${basedir}/build/logs" files="log.xml" />
+			<header><![CDATA[<?xml version="1.0" encoding="UTF-8"?>]]></header>				
+		</concat>
+		<delete file="${basedir}/build/logs/log.xml"/>
+	</target>
+
+	<!-- Test Cases -->		
+
+	<target name="websiterunstest">		
+		<exec executable="phpunit" failonerror="true">
+			<arg value="--configuration=${basedir}/Tests/Acceptance/conf/${configuration.phpunit}" />
+			<arg value="--log-junit=${basedir}/build/logs/detail/WebSiteRunsTest.xml" />
+			<arg value="--verbose" />
+			<arg value="${basedir}/Tests/Acceptance/Antest/WebSiteRunsTest.php" />
+		</exec>
+	</target>
+	
+	<target name="backendtypo3login">		
+		<exec executable="phpunit" failonerror="true">
+			<arg value="--configuration=${basedir}/Tests/Acceptance/conf/${configuration.phpunit}" />
+			<arg value="--log-junit=${basedir}/build/logs/detail/BackendTYPO3Login.xml" />
+			<arg value="--verbose" />
+			<arg value="${basedir}/Tests/Acceptance/Antest/BackendTYPO3Login.php" />
+		</exec>
+	</target>
+
+</project>
+

@@ -1,0 +1,509 @@
+version_scheme: T3O.1.dev
+webroot: htdocs
+build: build
+svn_base: 'http://svn.t3o-relaunch-week.de/'
+svn_method: checkout
+typo3:
+  svn_src: 'http://svn.t3o-relaunch-week.de/git.typo3.org/Core/tags/TYPO3_4-5-22+4704'
+  dir: typo3_src-4.5
+migrator:
+  svn_src: 'http://svn.t3o-relaunch-week.de/private/t3deploy/contrib/migrator'
+  dir: migrator
+backup:
+  files:
+    items:
+      production-htdocs-uploads:
+        path: htdocs/uploads
+        system: production
+        overwrite: true
+        recursive: true
+        chmod: '0775'
+        chgrp: www-data
+      production-htdocs-fileadmin:
+        path: htdocs/fileadmin
+        system: production
+        overwrite: true
+        recursive: true
+        chmod: '0775'
+        chgrp: www-data
+  database:
+    setup:
+      system: production
+      import:
+        be_users:
+          system: production
+        be_groups:
+          system: production
+        fe_groups:
+          system: production
+        fe_users:
+          system: production
+        pages_language_overlay:
+          system: production
+        pages:
+          system: production
+        sys_be_shortcuts:
+          system: production
+        tt_content:
+          system: production
+        tt_news_cat_mm:
+          system: production
+        tt_news_cat:
+          system: production
+        tt_news_related_mm:
+          system: production
+        tt_news:
+          system: production
+        tx_dam_cat:
+          system: production
+        tx_dam_media_types:
+          system: production
+        tx_dam_metypes_avail:
+          system: production
+        tx_dam_mm_cat:
+          system: production
+        tx_dam_mm_ref:
+          system: production
+        tx_dam_selection:
+          system: production
+        tx_dam:
+          system: production
+        tx_realurl_redirects:
+          system: production
+        tx_rtehtmlarea_acronym:
+          system: production
+        tx_typo3agencies_domain_model_agency:
+          system: production
+        tx_typo3agencies_domain_model_reference:
+          system: production
+        tx_typo3agencies_domain_model_industry:
+          system: production
+        tx_typo3agencies_domain_model_revenue:
+          system: production
+        tx_typo3agencies_domain_model_category:
+          system: production
+        tx_czsimplecal_domain_model_event:
+          system: production
+        tx_czsimplecal_domain_model_eventindex:
+          system: production
+        tx_czsimplecal_domain_model_exception:
+          system: production
+        tx_czsimplecal_domain_model_exceptiongroup:
+          system: production
+        tx_czsimplecal_exceptiongroup_exception_mm:
+          system: production
+        tx_czsimplecal_event_exception_mm:
+          system: production
+        tx_czsimplecal_domain_model_category:
+          system: production
+        tx_czsimplecal_event_category_mm:
+          system: production
+        tx_donation_account:
+          system: production
+        tx_donation_donation:
+          system: production
+        tx_powermail_fieldsets:
+          system: production
+        tx_powermail_fields:
+          system: production
+        tx_powermail_mails:
+          system: production
+        tx_rsaauth_keys:
+          system: production
+        tx_solr_indexqueue_file:
+          system: production
+        tx_solr_indexqueue_item:
+          system: production
+        tx_terdoc_categories:
+          system: production
+        tx_terdoc_manualscategories:
+          system: production
+        tx_terdoc_manualspagecache:
+          system: production
+        tx_terdoc_manuals:
+          system: production
+        tx_terdoc_renderproblems:
+          system: production
+        tx_ter_extensiondetails:
+          system: production
+        tx_ter_extensionkeys:
+          system: production
+        tx_ter_extensionmembers:
+          system: production
+        tx_ter_extensions:
+          system: production
+        tx_comments_comments:
+          system: production
+        tx_randombanners_domain_model_banner:
+          system: production
+        sys_ter:
+          system: production
+        tx_links:
+          system: production
+        tx_links_cat:
+          system: production
+        tx_links_mm_cat:
+          system: production
+        tx_pastecode_code:
+          system: production
+        tx_odsfacebook_auth:
+          system: production
+        tx_vimeoconnector_domain_model_type:
+          system: production
+        tx_vimeoconnector_domain_model_category:
+          system: production
+        tx_vimeoconnector_domain_model_video:
+          system: production
+        tx_vimeoconnector_mm_video_category:
+          system: production
+        tx_vimeoconnector_mm_video_video:
+          system: production
+        tx_terfe2_domain_model_extension:
+          system: production
+        tx_terfe2_domain_model_category:
+          system: production
+        tx_terfe2_domain_model_tag:
+          system: production
+        tx_terfe2_domain_model_version:
+          system: production
+        tx_terfe2_domain_model_media:
+          system: production
+        tx_terfe2_domain_model_experience:
+          system: production
+        tx_terfe2_domain_model_relation:
+          system: production
+        tx_terfe2_domain_model_author:
+          system: production
+        tx_terfe2_domain_model_search:
+          system: production
+        tx_terfe2_extension_category_mm:
+          system: production
+        tx_terfe2_extension_tag_mm:
+          system: production
+        tx_scheduler_task:
+          system: production
+    import:
+      tx_templavoila_datastructure:
+        system: latest
+      tx_templavoila_tmplobj:
+        system: latest
+      static_countries:
+        system: latest
+      static_country_zones:
+        system: latest
+      static_currencies:
+        system: latest
+      static_languages:
+        system: latest
+      static_territories:
+        system: latest
+      static_tsconfig_help:
+        system: latest
+      sys_domain:
+        system: latest
+      sys_filemounts:
+        system: latest
+      sys_language:
+        system: latest
+      sys_template:
+        system: latest
+      sys_workspace:
+        system: latest
+      sys_workspace_stage:
+        system: latest
+      tx_crawler_configuration:
+        system: latest
+      tx_staticinfotables_hotlist:
+        system: latest
+extensions:
+  tt_news:
+    version: 3.2.1
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/tt_news/trunk/'
+    skip:
+      dependency: true
+  t3org_base:
+    version: 0.1.1
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3org_base/trunk@2796'
+    svn_dev: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3org_base/trunk'
+    svn_repository: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3org_base'
+  t3org_configuration:
+    version: 0.1.2
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3org_configuration/trunk@2523'
+    svn_dev: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3org_configuration/trunk'
+    svn_repository: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3org_configuration'
+  t3org_template:
+    version: 0.1.0
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3org_template/trunk@2795'
+    svn_dev: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3org_template/trunk'
+    svn_repository: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3org_template'
+  be_groups:
+    version: 0.3.3-dev
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/be_groups/trunk'
+  crawler:
+    version: 3.3.6
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/crawler/tags/V_3-3-6'
+  kb_tv_cont_slide:
+    version: 0.4.3
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/ter/kb_tv_cont_slide/official/0.4.3'
+  lowlevel_scheduler_task:
+    version: 0.1.3.dev
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/lowlevel_scheduler_task/tags/0.1.2'
+    svn_dev: 'https://svn.typo3.org/TYPO3v4/Extensions/lowlevel_scheduler_task/trunk'
+  naw_single_signon:
+    version: 2.0.0
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/naw_single_signon'
+  realurl:
+    version: 1.10.2.AOE
+    svn: 'https://svn.github.com/tolleiv/Realurl'
+  templavoila:
+    version: 1.8.0
+    svn: 'http://svn.t3o-relaunch-week.de/git.typo3.org/Extensions/templavoila/trunk/'
+  static_info_tables:
+    version: 2.2.0
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/static_info_tables/trunk'
+  cleartypo3cache:
+    svn: 'https://svn.aoesupport.com/repository/extensions/aoe/cleartypo3cache/trunk'
+  cachecleaner:
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/cachecleaner/trunk@35983'
+  dam:
+    version: 1.2.0
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/dam/dam/tags/dam_1-2-0/'
+  dam_ttcontent:
+    version: 1.2.0
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/dam/dam_ttcontent/tags/dam_ttcontent_1-2-0/'
+  dam_catedit:
+    version: 1.2.0
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/dam/dam_catedit/tags/dam_catedit_1-2-0/'
+  dam_index:
+    version: 1.2.0
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/dam/dam_index/tags/dam_index_1-2-0/'
+  css_filelinks:
+    version: 0.2.19
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/css_filelinks/trunk@45907'
+  dam_filelinks:
+    version: 0.3.21
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/dam_filelinks/trunk@45907'
+  dam_tv_connector:
+    version: 0.2.0
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/dam_tv_connector/trunk@45907'
+  dam_ttnews:
+    version: 0.1.12
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/ter/dam_ttnews/offcial/0.1.12'
+  extbase_dam:
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/extbase_dam/trunk'
+  ed_transliteration:
+    version: 1.1.7
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/ed_transliteration/trunk'
+  ed_tv:
+    version: 0.0.3
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/ed_tv/trunk'
+  t3o_userimage:
+    version: 0.2.2
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3o_userimage'
+  randfeuserlist:
+    version: 0.0.1
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/randfeuserlist/trunk'
+  pmkshadowbox:
+    version: 3.2.1
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/ter/pmkshadowbox/tags/3.2.1'
+  t3org_feedparser:
+    version: 0.1.0
+    svn: 'https://svn.github.com/czenker/t3org_feedparser'
+  ttnews_irre:
+    version: 0.2.0
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/ttnews_irre/trunk'
+  pagebrowse:
+    version: 1.3.0
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/pagebrowse/trunk'
+  pagebrowse_tt_news:
+    version: 0.1.0
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/ter/pagebrowse_tt_news/tags/0.1.0'
+  solr:
+    version: 2.2.2
+    svn: 'http://svn.t3o-relaunch-week.de/git.typo3.org/Extensions/solr/branches/2.8'
+  solr_redmine:
+    version: 0.0.0
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/ter/solr_redmine/trunk'
+  donation:
+    version: 1.2.0
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/donation/trunk'
+  powermail:
+    version: 1.6.5
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/powermail/tags/1.6.9/'
+  typo3_agencies:
+    version: 1.0.0
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/typo3_agencies/trunk/'
+  ter:
+    version: 2.0.9
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/ter/trunk'
+    skip:
+      dependency: true
+  ter_doc:
+    version: 2.0.3
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/ter_doc/branches/renderQueue'
+  ter_doc_docbook:
+    version: 0.0.0
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/ter_doc_docbook/trunk'
+  ter_doc_html:
+    version: 0.0.0
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/ter_doc_html/trunk'
+  ter_doc_solrindexer:
+    version: 0.0.0
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/ter_doc_solrindexer/trunk/'
+    skip:
+      dependency: true
+  ter_fe:
+    version: 1.0.8
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/terfe/trunk'
+  ter_fe2:
+    version: 0.9.10
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/terfe/branches/ter_fe2'
+  ter_doc_sxw:
+    version: 1.0.0
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/ter_doc_sxw'
+  docondemand:
+    version: 2.0.1
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/docondemand/trunk'
+  comments:
+    version: 1.5.3
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/comments/tags/1_5_3/'
+  t3org_comments:
+    version: 0.0.0
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3org_comments/trunk/'
+  t3org_flickrfeed:
+    version: 0.0.0
+    svn: 'https://svn.github.com/czenker/t3org_flickrfeed'
+  randombanners:
+    version: 0.0.1
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/randombanners/trunk'
+  tt_address:
+    version: 2.2.1
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/ter/tt_address/trunk'
+  cz_simple_cal:
+    version: 0.0.0
+    svn: 'https://svn.github.com/czenker/cz_simple_cal'
+  links:
+    version: 0.0.0
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/links/trunk'
+  cc_softlink:
+    version: 0.0.0
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/cc_softlink/trunk'
+  ajaxlogin:
+    version: 0.0.1
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/ajaxlogin/trunk'
+  t3o_ajaxlogin:
+    version: 0.0.0
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3o_ajaxlogin/trunk'
+  geshilib:
+    version: 1.0.0
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/ter/geshilib/official/1.0.0'
+  pastecode:
+    version: 0.0.2
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/pastecode/trunk'
+  twittersearch:
+    version: 0.4.0
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/twittersearch/trunk'
+  tabs4templavoila:
+    version: 0.2.0
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/tabs4templavoila/trunk'
+  t3o_cla:
+    version: 0.2.0
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3o_cla/trunk'
+  ods_facebook:
+    version: 0.0.0
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/ods_facebook/trunk'
+  ter_xsl:
+    version: 0.0.0
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/ter/ter_xsl/trunk'
+  fed:
+    version: 0.0.0
+    svn: 'http://svn.t3o-relaunch-week.de/git.typo3.org/Extensions/fed/trunk/'
+  ed_extbase:
+    version: 0.0.0
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/ed_extbase/trunk'
+  ed_damcatsort:
+    version: 0.0.0
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/ed_damcatsort/trunk'
+  ed_gallery:
+    version: 0.0.0
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/ed_gallery/trunk'
+  pdf_generator2:
+    version: 0.21.1
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/ter/pdf_generator2/tags/0.21.1'
+  vimeo_connector:
+    version: 1.0.0
+    svn: 'https://svn.github.com/czenker/vimeo_connector'
+    skip:
+      dependency: true
+  cacheinfo:
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/cacheinfo/trunk'
+  purge:
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/purge/trunk'
+  js_css_optimizer:
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/js_css_optimizer/trunk'
+  cc_langguess:
+    version: 1.0.0
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/cc_langguess/trunk'
+  cc_textcat:
+    version: 2.0.0
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/cc_textcat/trunk'
+  linkhandler:
+    version: 1.0.5
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/linkhandler/tags/1.0.5/'
+packaging:
+  ignorePaths:
+    - ~^build~
+    - ~^selenium~
+    - ~^delta~
+    - ~^temp~
+    - ~conf/.htpasswd~
+    - ~^deployment~
+    - '~htdocs/fileadmin/(extensionFiles|ter)/.*~'
+    - '~htdocs/(typo3temp|fileadmin|uploads(?!/tx_aoetemplavoila).*)~'
+    - '~(\.log|todo\.txt|readme\.txt|temp_CACHED_(.)*\.php|ChangeLog|ENABLE_INSTALL_TOOL|system_installed\.txt)$~i'
+    - ~tests/~i
+    - ~\.(idea|svn|_.DS_Store)~
+deploymentContext:
+  usual:
+    packaging:
+      systems:
+        t3o-latest:
+          backup: production
+        t3o-confmaster:
+          backup: production
+        t3o-production:
+          backup: production
+  generic:
+    backup:
+      database:
+        setup:
+          import:
+            be_users:
+              system: fixtures
+            fe_users:
+              system: fixtures
+            tt_news_cache:
+              system: fixtures
+            tt_news_cache_tags:
+              system: fixtures
+    packaging:
+      ignorePaths:
+        - ~^build~
+        - ~^selenium~
+        - ~^delta~
+        - ~^temp~
+        - ~conf/.htpasswd~
+        - ~^deployment~
+        - '~htdocs/(services|typo3temp.*)~'
+        - '~htdocs/fileadmin/(extensionFiles|ter)/.*~'
+        - '~htdocs/fileadmin/TYPO3_4-7/.*~'
+        - '~(\.log|todo\.txt|readme\.txt|temp_CACHED_(.)*\.php|ChangeLog|ENABLE_INSTALL_TOOL|system_installed\.txt)$~i'
+        - ~tests/~i
+        - ~\.(idea|_.DS_Store)~
+      systems:
+        t3o-generic:
+          backup: production
+        t3o-testing1:
+          backup: production
+        t3o-vagrant:
+          backup: production

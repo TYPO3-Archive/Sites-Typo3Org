@@ -1,0 +1,83 @@
+# TYPO3 WAF RULE SET FILE http://typo3.org/waf.txt 280907-1
+# (based on ModSecurity Core Rules 2.1-1.4.3 from modsecurity.org)
+#
+# RULES ID RANGES
+# 1-99,999; reserved for local (internal) use. Use as you see fit but do not use this range for rules that are distributed to others.
+# 100,000-199,999; reserved for internal use of the engine, to assign to rules that do not have explicit IDs.
+# 200,000-299,999; reserved for rules published at modsecurity.org.
+# 300,000-399,999; reserved for rules published at gotroot.com.
+# 400,000-419,999; unused (available for reservation).
+# 420,000-429,999; reserved for ScallyWhack.
+# 430,000-899,999; unused (available for reservation).
+# 900,000-999,999; reserved for the Core Rules project.
+# 1,000,000 and above; unused (available for reservation).
+
+# START Example configuration file for the mod_security Apache2 module START
+#
+#LoadFile /usr/lib64/libxml2.so.2
+#LoadModule security2_module modules/mod_security2.so
+#LoadModule unique_id_module modules/mod_unique_id.so
+#
+#<IfModule mod_security2.c>
+#        # This is the ModSecurity Core Rules set.
+#
+#        # Basic configuration goes in here
+#
+#        Include modsecurity.d/modsecurity_crs_10_config.conf
+#
+#        # Protocol violation and anomalies.
+#
+#        Include modsecurity.d/blocking/modsecurity_crs_20_protocol_violations.conf
+#        Include modsecurity.d/blocking/modsecurity_crs_21_protocol_anomalies.conf
+#
+#        # HTTP policy rules
+#
+#        Include modsecurity.d/modsecurity_crs_30_http_policy.conf
+#
+#        # Here comes the bad stuff...
+#
+#        Include modsecurity.d/modsecurity_crs_35_bad_robots.conf
+#        Include modsecurity.d/blocking/modsecurity_crs_40_generic_attacks.conf
+#        Include modsecurity.d/modsecurity_crs_45_trojans.conf
+#        Include modsecurity.d/modsecurity_crs_50_outbound.conf
+#
+#        # Search engines and other crawlers. Only useful if you want to track
+#        # Google / Yahoo et. al.
+#
+#        # Include modsecurity.d/modsecurity_crs_55_marketing.conf
+#
+#        # Put your local rules in here. http://typo3.org/waf.txt (this file).
+#
+#        Include modsecurity.d/modsecurity_crs_9999_typo3.conf
+#</IfModule>
+#
+# END Example configuration file for the mod_security Apache2 module END
+
+# Disable WAF for TYPO3 BE
+
+<Location /typo3>
+SecRuleEngine Off
+</Location>
+
+# Disabling ModSecurity Core Rules to create a light weight filter.
+
+# Core Rules 20
+SecRuleRemoveById 960911 950012 960912 960016 960011 960012 960013 950107 950801 950116 960014 960018 960901
+# Core Rules 21
+SecRuleRemoveById 960008 960008 960015 960015 960009 960009 960904 960017 960913
+# Core Rules 30
+SecRuleRemoveById 960032 960010 960034 960035 960038 960902 960903
+# Core Rules 35
+SecRuleRemoveById 990002 990901 990902 990012 990011
+# Core Rules 40
+SecRuleRemoveById 950008 950010 950011 950018 950019
+# Core Rules 45
+SecRuleRemoveById 950110 950921 950922
+# Core Rules 50
+SecRuleRemoveById 970002 970003 970004 970904 970007 970008 970009 970010 970012 970013 970014 970903 970015 970902 970016 970018 970901 970118 970021
+# Core Rules 55
+SecRuleRemoveById 910008 910007 910006
+
+# TYPO3 WAF rule set
+# Blank
+# still beta testing the Core Rules...

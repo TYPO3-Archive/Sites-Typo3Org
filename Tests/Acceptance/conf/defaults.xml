@@ -1,0 +1,29 @@
+<!--  used for local testing and as default if no other environmentals are set -->
+
+<phpunit>
+	<php>
+		<!--  base URL -->
+		<var name="testing.maindomain" value="http://" />
+		<!--  only testing URL -->
+		<var name="testing.externurl" value="http://" />
+		<var name="testing.selenium.rc" value="localhost" />
+		<var name="testing.selenium.timeout" value="18000" />
+		<var name="testing.selenium.browser" value="*firefox" />
+		
+		<var name="testing.backend.user" value="selenium.user" />
+		<var name="testing.backend.password" value="password" />
+		<var name="testing.backend.homeid" value="3" />
+	
+		<var name="testing.reports" value="" />
+		
+		<!-- all three values have to be set; just works with firefox as test Browser -->
+		<!-- TRUE for capturing; anything else does nothing -->
+		<var name="testing.selenium.captureScreenshotOnFailure" value="False" />
+		<var name="testing.selenium.screenshotPath" value="" />
+		<var name="testing.selenium.screenshotUrl" value="" />
+´
+		<var name="testing.pageids" value="resources/pageIDs-preview.xml" />
+
+	</php>
+</phpunit>
+

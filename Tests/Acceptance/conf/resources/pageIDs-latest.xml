@@ -1,0 +1,5 @@
+<!--  name = could be language; value = urls without http:// and no ending /-->
+
+<pageID>
+	<var name="de" value="www.latest.dev.t3o-relaunch-week.de" />
+</pageID>
