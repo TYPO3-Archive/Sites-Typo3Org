@@ -5,7 +5,7 @@ svn_base: 'http://svn.t3o-relaunch-week.de/'
 svn_method: checkout
 typo3:
   git: git://git.typo3.org/TYPO3v4/Core.git
-  git_tag: TYPO3_4-5-22 
+  git_tag: sandbox/tolleiv/4.5.22+4704 
   dir: typo3_src-4.5
 migrator:
   file: /var/lib/jenkins/t3deploy/contrib/migrator/settings/projects/t3org/deployment_environments.inc.php
@@ -253,11 +253,11 @@ extensions:
     version: 2.0.0
     svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/naw_single_signon'
   realurl:
-    version: 1.10.2.AOE
-    svn: 'https://svn.github.com/tolleiv/Realurl'
+    git: 'git://github.com/tolleiv/Realurl.git'
+    git_branch: master
   templavoila:
-    version: 1.8.0
-    svn: 'http://svn.t3o-relaunch-week.de/git.typo3.org/Extensions/templavoila/trunk/'
+    git: 'git://git.typo3.org/TYPO3v4/Extensions/templavoila.git'
+    git_branch: master
   static_info_tables:
     version: 2.2.0
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/static_info_tables/trunk'
