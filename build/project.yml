@@ -254,7 +254,7 @@ extensions:
     svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/naw_single_signon'
   realurl:
     git: 'git://github.com/tolleiv/Realurl.git'
-    git_branch: master
+    git_branch: aoe_modifications
   templavoila:
     git: 'git://git.typo3.org/TYPO3v4/Extensions/templavoila.git'
     git_branch: master
