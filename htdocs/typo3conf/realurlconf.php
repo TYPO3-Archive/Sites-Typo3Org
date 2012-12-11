@@ -153,6 +153,11 @@ $realurlconf = array (
 				array(
 					'GETvar' => 'fluid-widget-id',
 				)
+			),
+			'page' => array(
+				array (
+					'GETvar' => 'tx_typo3agencies_pi1[page]',
+				)
 			)
 		),
 		'435' => array(
@@ -216,6 +221,11 @@ $realurlconf = array (
 				array (
 					'GETvar' => 'tx_typo3agencies_pi1[redirect]',
 				),
+			),
+			'page' => array(
+				array (
+					'GETvar' => 'tx_typo3agencies_pi1[page]',
+				)
 			)
 		)
 	),
@@ -530,8 +540,6 @@ $realurlconf = array (
 			),
 			array (
 				'GETvar' => 'tx_typo3agencies_pi1[action]',
-				'valueMap' => array(
-				),
 			),
 			array (
 				'GETvar' => 'tx_typo3agencies_pi1[agency]',
@@ -618,12 +626,6 @@ $realurlconf = array (
 		'181' => 'news',	// news
 		'434' => 'news',	// documentation articles
 		'411' => 'calendar',
-		'554' => 'calendar',
-		'555' => 'calendar',
-		'556' => 'calendar',
-		'461' => 'calendar',
-		'559' => 'calendar',
-		'560' => 'calendar',
 		'423' => 'agencies',
 		'435' => 'case_studies',
 		'444' => 'calendarSubmission',
