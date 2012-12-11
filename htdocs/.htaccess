@@ -145,7 +145,7 @@ RewriteRule ^typo3conf/ext/dam/mod_file/.* - [L]
 RewriteCond %{ENV:HTTPS} !on [NC]
 RewriteCond %{HTTP_HOST} !\.dev$ [NC]
 RewriteCond %{REQUEST_URI} ^/typo3(/|$)
-RewriteRule (.*) https://%{HTTP_HOST}/$1 [R=301,L]
+RewriteRule (.*) https://%{HTTP_HOST}/$1 [R=302,L]
 
 # Fix #37233: Prevent indexing except on the live website
 RewriteCond %{HTTP_HOST} !^typo3.org$ [NC]
