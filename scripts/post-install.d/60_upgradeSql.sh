@@ -4,7 +4,7 @@
 ABSPATH=$(cd "${0%/*}" 2>/dev/null; cd ../..; echo "${PWD}/${0##*/}")
 SOURCE_DIR=`dirname "${ABSPATH}"`
 
-
+exit 0; # Not needed atm - kept for future tasks
 #######################################################################
 
 getLocalConfValue() {
@@ -30,6 +30,6 @@ else
 	SOURCE_DB_USER=`getLocalConfValue "typo_db_username" "${SOURCE_DIR}"`
 	SOURCE_DB_PASS=`getLocalConfValue "typo_db_password" "${SOURCE_DIR}"`
 	SOURCE_DB_HOST=`getLocalConfValue "typo_db_host" "${SOURCE_DIR}"`
-
+	
 	mysql -u${SOURCE_DB_USER} -h${SOURCE_DB_HOST} -p${SOURCE_DB_PASS} ${SOURCE_DB_NAME} < "${SOURCE_DIR}/scripts/post-install.d/assets/T3O.1.dev2666.typo3_agencies.sql"
 fi
