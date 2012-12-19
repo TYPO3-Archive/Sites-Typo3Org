@@ -319,8 +319,9 @@ extensions:
     version: 0.1.0
     svn: 'http://svn.t3o-relaunch-week.de/extensions/ter/pagebrowse_tt_news/tags/0.1.0'
   solr:
-    version: 2.2.2
-    svn: 'http://svn.t3o-relaunch-week.de/git.typo3.org/Extensions/solr/branches/2.8'
+    version: 2.8.2
+    git: 'git://git.typo3.org/TYPO3v4/Extensions/solr.git'
+    git_tag: '2.8.2'
   solr_redmine:
     version: 0.0.0
     svn: 'http://svn.t3o-relaunch-week.de/extensions/ter/solr_redmine/trunk'
