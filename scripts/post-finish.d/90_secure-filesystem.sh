@@ -37,17 +37,15 @@ done
 
 
 if [ "${ENVIRONMENT}" = "production" ] ; then
-	echo -n "Fix group to www-data... `date` "
-	find ${SOURCE_DIR}/htdocs -exec chgrp typo3org {} \;
-	echo "done"
-
-	echo -n "Fix directory permissions... `date` "
-	find ${SOURCE_DIR}/htdocs -type d -exec chmod 02775  {} \;
-	echo "done"
-
-	echo -n "Fix file permissions... `date` "
-	find ${SOURCE_DIR}/htdocs -type f -exec chmod 0664 {} \;
-	echo "done"
+	#echo -n "Fix group to www-data... `date` "
+	#find ${SOURCE_DIR}/htdocs -exec chgrp typo3org {} \;
+	#echo "done"
+	#echo -n "Fix directory permissions... `date` "
+	#find ${SOURCE_DIR}/htdocs -type d -exec chmod 02775  {} \;
+	#echo "done"
+	#echo -n "Fix file permissions... `date` "
+	#find ${SOURCE_DIR}/htdocs -type f -exec chmod 0664 {} \;
+	#echo "done"
 fi
 
 echo "Finish `date`"
