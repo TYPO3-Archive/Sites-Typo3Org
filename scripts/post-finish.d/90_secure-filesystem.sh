@@ -37,6 +37,7 @@ done
 
 
 if [ "${ENVIRONMENT}" = "production" ] ; then
+	echo "Nothing to do here"
 	#echo -n "Fix group to www-data... `date` "
 	#find ${SOURCE_DIR}/htdocs -exec chgrp typo3org {} \;
 	#echo "done"
