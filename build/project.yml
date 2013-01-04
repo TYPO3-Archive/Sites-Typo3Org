@@ -233,9 +233,7 @@ extensions:
     svn_repository: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3org_configuration'
   t3org_template:
     version: 0.1.0
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3org_template/trunk@2795'
-    svn_dev: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3org_template/trunk'
-    svn_repository: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3org_template'
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3org_template/trunk'
   be_groups:
     version: 0.3.3-dev
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/be_groups/trunk'
