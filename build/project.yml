@@ -223,12 +223,12 @@ extensions:
       dependency: true
   t3org_base:
     version: 0.1.1
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3org_base/trunk@2796'
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3org_base/trunk'
     svn_dev: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3org_base/trunk'
     svn_repository: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3org_base'
   t3org_configuration:
     version: 0.1.2
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3org_configuration/trunk@2523'
+    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3org_configuration/trunk'
     svn_dev: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3org_configuration/trunk'
     svn_repository: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3org_configuration'
   t3org_template:
