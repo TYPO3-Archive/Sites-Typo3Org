@@ -67,7 +67,7 @@ $TYPO3_CONF_VARS['SYS']['curlUse'] = '1';
 $TYPO3_CONF_VARS['SYS']['no_pconnect'] = '1';
 $TYPO3_CONF_VARS['SYS']['UTF8filesystem'] = '1';
 $TYPO3_CONF_VARS['SYS']['maxFileNameLength'] = '120';
-$TYPO3_CONF_VARS['SYS']['useCachingFramework'] = '1';
+$TYPO3_CONF_VARS['SYS']['useCachingFramework'] = false;
 $TYPO3_CONF_VARS['SYS']['recursiveDomainSearch'] = '1';
 
 	// Image Configurations
