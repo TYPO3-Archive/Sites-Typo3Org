@@ -257,8 +257,10 @@ extensions:
     git: 'git://git.typo3.org/TYPO3v4/Extensions/templavoila.git'
     git_branch: master
   static_info_tables:
-    version: 2.2.0
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/static_info_tables/trunk'
+    version: 2.4.0
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/static_info_tables/trunk@71423'
+    skip:
+      dependency: true
   cleartypo3cache:
     svn: 'https://svn.aoesupport.com/repository/extensions/aoe/cleartypo3cache/trunk'
   cachecleaner:
