@@ -75,6 +75,7 @@ RewriteRule ^documentation/document-library/references/(.*) documentation/docume
 RewriteRule ^documentation/document-library/(guides|tutorials|core-documentation)/$ /documentation/document-library/$1//current/ [R=302,L]
 RewriteRUle ^documentation/typo3-book/$ documentation/ [R=301,L]
 RewriteRule ^favicon\.ico$ /typo3conf/ext/t3org_template/icons/favicon.ico [R=301,L]
+RewriteRule ^news/article/$ news/ [R=301,L]
 
 # Old RSS feed URLs
 RewriteRule ^rss091.xml$ xml-feeds/rss.xml [R=301,L]
