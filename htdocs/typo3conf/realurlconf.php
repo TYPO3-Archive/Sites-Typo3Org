@@ -6,7 +6,7 @@ $realurlconf = array (
 		'enableUrlDecodeCache' => 1,
 		'enableUrlEncodeCache' => 1,
 		'respectSimulateStaticURLs' => 0,
-		'emptyUrlReturnValue' => '/'
+		'emptyUrlReturnValue' => '/',
 	),
 
 	'redirects_regex' => array (),
@@ -83,7 +83,8 @@ $realurlconf = array (
 							'defineSpaceCharacters' => ' -+',
 							'strtolower' => 1,
 							'spaceCharacter' => '-'
-						)
+						),
+						'enable404forInvalidAlias' => TRUE,
 					)
 				),
 				'1' => array (
@@ -338,7 +339,8 @@ $realurlconf = array (
 						'defineSpaceCharacters' => ' -+',
 						'strtolower' => 1,
 						'spaceCharacter' => '-'
-					)
+					),
+					'enable404forInvalidAlias' => TRUE,
 				)
 			),
 			'2' => array(
@@ -364,7 +366,8 @@ $realurlconf = array (
 						'defineSpaceCharacters' => ' -+',
 						'strtolower' => 1,
 						'spaceCharacter' => '-'
-					)
+					),
+					'enable404forInvalidAlias' => TRUE,
 				)
 			),
 			array(
@@ -417,7 +420,8 @@ $realurlconf = array (
 						'defineSpaceCharacters' => ' -+',
 						'strtolower' => 1,
 						'spaceCharacter' => '-'
-					)
+					),
+					'enable404forInvalidAlias' => TRUE,
 				)
 			),
 			'1' => array (
@@ -453,7 +457,8 @@ $realurlconf = array (
 						'defineSpaceCharacters' => ' -+',
 						'strtolower' => 1,
 						'spaceCharacter' => '-'
-					)
+					),
+					'enable404forInvalidAlias' => TRUE,
 				)
 			)
 		),
@@ -608,7 +613,8 @@ $realurlconf = array (
 						'defineSpaceCharacters' => ' -+',
 						'strtolower' => 1,
 						'spaceCharacter' => '-'
-					)
+					),
+					'enable404forInvalidAlias' => TRUE,
 				)
 			),
 		),
