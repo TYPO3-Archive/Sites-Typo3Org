@@ -5,7 +5,7 @@ svn_base: 'http://svn.t3o-relaunch-week.de/'
 svn_method: checkout
 typo3:
   git: git://git.typo3.org/TYPO3v4/Core.git
-  git_tag: sandbox/tolleiv/4.5.24+4704+17541
+  git_tag: sandbox/tolleiv/4.5.25+4704+17541
   dir: typo3_src-4.5
 migrator:
   file: /var/lib/jenkins/t3deploy/contrib/migrator/settings/projects/t3org/deployment_environments.inc.php
