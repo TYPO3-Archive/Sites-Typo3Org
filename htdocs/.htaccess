@@ -98,6 +98,9 @@ RewriteRule ^download/packages$	download [R=301,L]
 RewriteRule ^extension(s?)(/$|$) extensions/repository/ [R=301,L]
 RewriteRule ^donate(/?)$ donate/online-donation/ [R=301,L]
 
+# unused page
+RewriteRule ^extensions/repository/search.*$ extensions/repository/ [R=301,L]
+
 # target site of typo3.ch redirect
 RewriteCond %{QUERY_STRING} id=1221&L=2
 RewriteRule .* /? [R=301,L]
