@@ -1,7 +1,7 @@
 version_scheme: T3O.1.dev
 webroot: htdocs
 build: build
-svn_base: 'http://svn.t3o-relaunch-week.de/'
+svn_base: 'http://svn.t3o.typo3.org/'
 svn_method: checkout
 typo3:
   git: git://git.typo3.org/Packages/TYPO3.CMS.git
@@ -218,22 +218,22 @@ backup:
 extensions:
   tt_news:
     version: 3.2.1
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/tt_news/trunk/'
+    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/tt_news/trunk/'
     skip:
       dependency: true
   t3org_base:
     version: 0.1.1
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3org_base/trunk'
-    svn_dev: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3org_base/trunk'
-    svn_repository: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3org_base'
+    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/t3org_base/trunk'
+    svn_dev: 'http://svn.t3o.typo3.org/extensions/projects/t3org/t3org_base/trunk'
+    svn_repository: 'http://svn.t3o.typo3.org/extensions/projects/t3org/t3org_base'
   t3org_configuration:
     version: 0.1.2
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3org_configuration/trunk'
-    svn_dev: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3org_configuration/trunk'
-    svn_repository: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3org_configuration'
+    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/t3org_configuration/trunk'
+    svn_dev: 'http://svn.t3o.typo3.org/extensions/projects/t3org/t3org_configuration/trunk'
+    svn_repository: 'http://svn.t3o.typo3.org/extensions/projects/t3org/t3org_configuration'
   t3org_template:
     version: 0.1.0
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3org_template/trunk'
+    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/t3org_template/trunk'
   be_groups:
     version: 0.3.3-dev
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/be_groups/trunk'
@@ -242,14 +242,14 @@ extensions:
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/crawler/tags/V_3-3-6'
   kb_tv_cont_slide:
     version: 0.4.3
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/ter/kb_tv_cont_slide/official/0.4.3'
+    svn: 'http://svn.t3o.typo3.org/extensions/ter/kb_tv_cont_slide/official/0.4.3'
   lowlevel_scheduler_task:
     version: 0.1.3.dev
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/lowlevel_scheduler_task/tags/0.1.2'
     svn_dev: 'https://svn.typo3.org/TYPO3v4/Extensions/lowlevel_scheduler_task/trunk'
   naw_single_signon:
     version: 2.0.0
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/naw_single_signon'
+    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/naw_single_signon'
   realurl:
     git: 'git://github.com/tolleiv/Realurl.git'
     git_branch: aoe_modifications
@@ -288,24 +288,24 @@ extensions:
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/dam_tv_connector/trunk@45907'
   dam_ttnews:
     version: 0.1.12
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/ter/dam_ttnews/offcial/0.1.12'
+    svn: 'http://svn.t3o.typo3.org/extensions/ter/dam_ttnews/offcial/0.1.12'
   extbase_dam:
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/extbase_dam/trunk'
   ed_transliteration:
     version: 1.1.7
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/ed_transliteration/trunk'
+    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/ed_transliteration/trunk'
   ed_tv:
     version: 0.0.3
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/ed_tv/trunk'
+    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/ed_tv/trunk'
   t3o_userimage:
     version: 0.2.2
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3o_userimage'
+    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/t3o_userimage'
   randfeuserlist:
     version: 0.0.1
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/randfeuserlist/trunk'
+    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/randfeuserlist/trunk'
   pmkshadowbox:
     version: 3.2.1
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/ter/pmkshadowbox/tags/3.2.1'
+    svn: 'http://svn.t3o.typo3.org/extensions/ter/pmkshadowbox/tags/3.2.1'
   t3org_feedparser:
     version: 0.1.0
     svn: 'https://svn.github.com/czenker/t3org_feedparser'
@@ -317,17 +317,17 @@ extensions:
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/pagebrowse/trunk'
   pagebrowse_tt_news:
     version: 0.1.0
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/ter/pagebrowse_tt_news/tags/0.1.0'
+    svn: 'http://svn.t3o.typo3.org/extensions/ter/pagebrowse_tt_news/tags/0.1.0'
   solr:
     version: 2.8.2
     git: 'git://git.typo3.org/TYPO3v4/Extensions/solr.git'
     git_tag: '2.8.2'
   solr_redmine:
     version: 0.0.0
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/ter/solr_redmine/trunk'
+    svn: 'http://svn.t3o.typo3.org/extensions/ter/solr_redmine/trunk'
   donation:
     version: 1.2.0
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/donation/trunk'
+    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/donation/trunk'
   powermail:
     version: 1.6.5
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/powermail/tags/1.6.9/'
@@ -361,76 +361,76 @@ extensions:
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/terfe/branches/ter_fe2'
   ter_doc_sxw:
     version: 1.0.0
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/ter_doc_sxw'
+    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/ter_doc_sxw'
   docondemand:
     version: 2.0.1
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/docondemand/trunk'
+    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/docondemand/trunk'
   comments:
     version: 1.5.3
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/comments/tags/1_5_3/'
   t3org_comments:
     version: 0.0.0
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3org_comments/trunk/'
+    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/t3org_comments/trunk/'
   t3org_flickrfeed:
     version: 0.0.0
     svn: 'https://svn.github.com/czenker/t3org_flickrfeed'
   randombanners:
     version: 0.0.1
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/randombanners/trunk'
+    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/randombanners/trunk'
   tt_address:
     version: 2.2.1
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/ter/tt_address/trunk'
+    svn: 'http://svn.t3o.typo3.org/extensions/ter/tt_address/trunk'
   cz_simple_cal:
     version: 0.0.0
     svn: 'https://svn.github.com/czenker/cz_simple_cal'
   links:
     version: 0.0.0
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/links/trunk'
+    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/links/trunk'
   cc_softlink:
     version: 0.0.0
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/cc_softlink/trunk'
+    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/cc_softlink/trunk'
   ajaxlogin:
     version: 0.0.1
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/ajaxlogin/trunk'
+    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/ajaxlogin/trunk'
   t3o_ajaxlogin:
     version: 0.0.0
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3o_ajaxlogin/trunk'
+    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/t3o_ajaxlogin/trunk'
   geshilib:
     version: 1.0.0
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/ter/geshilib/official/1.0.0'
+    svn: 'http://svn.t3o.typo3.org/extensions/ter/geshilib/official/1.0.0'
   pastecode:
     version: 0.0.2
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/pastecode/trunk'
+    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/pastecode/trunk'
   twittersearch:
     version: 0.4.0
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/twittersearch/trunk'
+    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/twittersearch/trunk'
   tabs4templavoila:
     version: 0.2.0
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/tabs4templavoila/trunk'
+    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/tabs4templavoila/trunk'
   t3o_cla:
     version: 0.2.0
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/t3o_cla/trunk'
+    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/t3o_cla/trunk'
   ods_facebook:
     version: 0.0.0
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/ods_facebook/trunk'
+    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/ods_facebook/trunk'
   ter_xsl:
     version: 0.0.0
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/ter/ter_xsl/trunk'
+    svn: 'http://svn.t3o.typo3.org/extensions/ter/ter_xsl/trunk'
   fed:
     version: 0.0.0
-    svn: 'http://svn.t3o-relaunch-week.de/git.typo3.org/Extensions/fed/trunk/'
+    svn: 'http://svn.t3o.typo3.org/git.typo3.org/Extensions/fed/trunk/'
   ed_extbase:
     version: 0.0.0
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/ed_extbase/trunk'
+    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/ed_extbase/trunk'
   ed_damcatsort:
     version: 0.0.0
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/ed_damcatsort/trunk'
+    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/ed_damcatsort/trunk'
   ed_gallery:
     version: 0.0.0
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/projects/t3org/ed_gallery/trunk'
+    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/ed_gallery/trunk'
   pdf_generator2:
     version: 0.21.1
-    svn: 'http://svn.t3o-relaunch-week.de/extensions/ter/pdf_generator2/tags/0.21.1'
+    svn: 'http://svn.t3o.typo3.org/extensions/ter/pdf_generator2/tags/0.21.1'
   vimeo_connector:
     version: 1.0.0
     svn: 'https://svn.github.com/czenker/vimeo_connector'
