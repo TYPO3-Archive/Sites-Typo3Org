@@ -291,6 +291,8 @@ extensions:
     svn: 'http://svn.t3o.typo3.org/extensions/ter/dam_ttnews/offcial/0.1.12'
   extbase_dam:
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/extbase_dam/trunk'
+    skip:
+      dependency: true
   ed_transliteration:
     version: 1.1.7
     svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/ed_transliteration/trunk'
