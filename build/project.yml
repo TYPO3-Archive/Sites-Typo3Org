@@ -338,6 +338,8 @@ extensions:
   typo3_agencies:
     version: 1.0.0
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/typo3_agencies/trunk/'
+    skip:
+      dependency: true
   ter:
     version: 2.0.9
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/ter/trunk'
@@ -363,6 +365,8 @@ extensions:
   ter_fe2:
     version: 0.9.10
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/terfe/branches/ter_fe2'
+    skip:
+      dependency: true
   ter_doc_sxw:
     version: 1.0.0
     svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/ter_doc_sxw'
@@ -375,18 +379,26 @@ extensions:
   t3org_comments:
     version: 0.0.0
     svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/t3org_comments/trunk/'
+    skip:
+      dependency: true
   t3org_flickrfeed:
     version: 0.0.0
     svn: 'https://svn.github.com/czenker/t3org_flickrfeed'
+    skip:
+      dependency: true
   randombanners:
     version: 0.0.1
     svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/randombanners/trunk'
+    skip:
+      dependency: true
   tt_address:
     version: 2.2.1
     svn: 'http://svn.t3o.typo3.org/extensions/ter/tt_address/trunk'
   cz_simple_cal:
     version: 0.0.0
     svn: 'https://svn.github.com/czenker/cz_simple_cal'
+    skip:
+      dependency: true
   links:
     version: 0.0.0
     svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/links/trunk'
@@ -396,6 +408,8 @@ extensions:
   ajaxlogin:
     version: 0.0.1
     svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/ajaxlogin/trunk'
+    skip:
+      dependency: true
   t3o_ajaxlogin:
     version: 0.0.0
     svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/t3o_ajaxlogin/trunk'
@@ -426,6 +440,8 @@ extensions:
   ed_extbase:
     version: 0.0.0
     svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/ed_extbase/trunk'
+    skip:
+      dependency: true
   ed_damcatsort:
     version: 0.0.0
     svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/ed_damcatsort/trunk'
