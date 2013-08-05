@@ -453,6 +453,8 @@ extensions:
   ed_gallery:
     version: 0.0.0
     svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/ed_gallery/trunk'
+    skip:
+      dependency: true
   pdf_generator2:
     version: 0.21.1
     svn: 'http://svn.t3o.typo3.org/extensions/ter/pdf_generator2/tags/0.21.1'
