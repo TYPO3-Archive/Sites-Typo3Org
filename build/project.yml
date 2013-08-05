@@ -310,7 +310,7 @@ extensions:
     svn: 'http://svn.t3o.typo3.org/extensions/ter/pmkshadowbox/tags/3.2.1'
   t3org_feedparser:
     version: 0.1.0
-    svn: 'https://svn.github.com/czenker/t3org_feedparser'
+    git: 'https://github.com/czenker/t3org_feedparser.git'
     skip:
       dependency: true
   ttnews_irre:
@@ -383,7 +383,7 @@ extensions:
       dependency: true
   t3org_flickrfeed:
     version: 0.0.0
-    svn: 'https://svn.github.com/czenker/t3org_flickrfeed'
+    git: 'https://github.com/czenker/t3org_flickrfeed.git'
     skip:
       dependency: true
   randombanners:
@@ -396,7 +396,7 @@ extensions:
     svn: 'http://svn.t3o.typo3.org/extensions/ter/tt_address/trunk'
   cz_simple_cal:
     version: 0.0.0
-    svn: 'https://svn.github.com/czenker/cz_simple_cal'
+    git: 'https://github.com/czenker/cz_simple_cal.git'
     skip:
       dependency: true
   links:
@@ -455,7 +455,7 @@ extensions:
     svn: 'http://svn.t3o.typo3.org/extensions/ter/pdf_generator2/tags/0.21.1'
   vimeo_connector:
     version: 1.0.0
-    svn: 'https://svn.github.com/czenker/vimeo_connector'
+    git: 'https://github.com/czenker/vimeo_connector.git'
     skip:
       dependency: true
   cacheinfo:
