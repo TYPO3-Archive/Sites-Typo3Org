@@ -311,6 +311,7 @@ extensions:
   t3org_feedparser:
     version: 0.1.0
     git: 'https://github.com/czenker/t3org_feedparser.git'
+    git_branch: 'master'
     skip:
       dependency: true
   ttnews_irre:
@@ -384,6 +385,7 @@ extensions:
   t3org_flickrfeed:
     version: 0.0.0
     git: 'https://github.com/czenker/t3org_flickrfeed.git'
+    git_branch: master
     skip:
       dependency: true
   randombanners:
@@ -397,6 +399,7 @@ extensions:
   cz_simple_cal:
     version: 0.0.0
     git: 'https://github.com/czenker/cz_simple_cal.git'
+    git_branch: master
     skip:
       dependency: true
   links:
@@ -456,6 +459,7 @@ extensions:
   vimeo_connector:
     version: 1.0.0
     git: 'https://github.com/czenker/vimeo_connector.git'
+    git_branch: master
     skip:
       dependency: true
   cacheinfo:
