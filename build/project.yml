@@ -5,7 +5,7 @@ svn_base: 'http://svn.t3o.typo3.org/'
 svn_method: checkout
 typo3:
   git: git://git.typo3.org/Packages/TYPO3.CMS.git
-  git_tag: sandbox/tolleiv/4.5.25+4704+17541
+  git_tag: sandbox/tolleiv/4.5.29+4704
   dir: typo3_src-4.5
 migrator:
   file: /var/lib/jenkins/t3deploy/contrib/migrator/settings/projects/t3org/deployment_environments.inc.php
