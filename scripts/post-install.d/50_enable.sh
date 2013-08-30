@@ -31,7 +31,7 @@ else
 	SOURCE_DB_PASS=`getLocalConfValue "typo_db_password" "${SOURCE_DIR}"`
 	SOURCE_DB_HOST=`getLocalConfValue "typo_db_host" "${SOURCE_DIR}"`
 
-	echo -n "Fix  some user settings for non-production systems (Christian Z, Nikola S, Mario M, Daniel L.)"
-	echo "UPDATE be_users SET disable=0 WHERE uid IN (9,34, 50, 58);" | mysql -u${SOURCE_DB_USER} -h${SOURCE_DB_HOST} -p${SOURCE_DB_PASS} ${SOURCE_DB_NAME}
+	echo -n "Fix  some user settings for non-production systems (Christian Z, Nikola S, Mario M, Daniel L., Kay Strobach)"
+	echo "UPDATE be_users SET disable=0 WHERE uid IN (9,34, 50, 58, 151);" | mysql -u${SOURCE_DB_USER} -h${SOURCE_DB_HOST} -p${SOURCE_DB_PASS} ${SOURCE_DB_NAME}
 	echo "done"
 fi
