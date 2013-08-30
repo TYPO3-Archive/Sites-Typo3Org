@@ -215,6 +215,27 @@ backup:
         system: latest
       tx_staticinfotables_hotlist:
         system: latest
+      cache_sys_dmail_stat:
+        system: latest
+      sys_dmail:
+        system: latest
+      sys_dmail_group:
+        system: latest
+      sys_dmail_group_mm:
+        system: latest
+      sys_dmail_maillog:
+        system: latest
+      sys_dmail_category:
+        system: latest
+      sys_dmail_group_category_mm:
+        system: latest
+      sys_dmail_feuser_category_mm:
+        system: latest
+      sys_dmail_ttaddress_category_mm:
+        system: latest
+      sys_dmail_ttcontent_category_mm:
+        system: latest
+
 extensions:
   tt_news:
     version: 3.2.1
@@ -479,6 +500,14 @@ extensions:
   linkhandler:
     version: 1.0.5
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/linkhandler/tags/1.0.5/'
+  direct_mail:
+    version: '3.1.0'
+    git: 'http://git.typo3.org/TYPO3v4/Extensions/direct_mail.git'
+    git_tag: '3.1.0'
+  typo3org_newsletter:
+    version: '0.0.0'
+    git: 'https://github.com/dkd/typo3orgnewsletter.git'
+  
 packaging:
   ignorePaths:
     - ~^build~
