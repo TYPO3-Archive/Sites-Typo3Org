@@ -182,6 +182,24 @@ backup:
           system: production
         tx_scheduler_task:
           system: production
+        sys_dmail:
+          system: production
+        sys_dmail_group:
+          system: production
+        sys_dmail_group_mm:
+          system: production
+        sys_dmail_maillog:
+          system: production
+        sys_dmail_category:
+          system: production
+        sys_dmail_group_category_mm:
+          system: production
+        sys_dmail_feuser_category_mm:
+          system: production
+        sys_dmail_ttaddress_category_mm:
+          system: production
+        sys_dmail_ttcontent_category_mm:
+          system: production
     import:
       tx_templavoila_datastructure:
         system: latest
@@ -214,26 +232,6 @@ backup:
       tx_crawler_configuration:
         system: latest
       tx_staticinfotables_hotlist:
-        system: latest
-      cache_sys_dmail_stat:
-        system: latest
-      sys_dmail:
-        system: latest
-      sys_dmail_group:
-        system: latest
-      sys_dmail_group_mm:
-        system: latest
-      sys_dmail_maillog:
-        system: latest
-      sys_dmail_category:
-        system: latest
-      sys_dmail_group_category_mm:
-        system: latest
-      sys_dmail_feuser_category_mm:
-        system: latest
-      sys_dmail_ttaddress_category_mm:
-        system: latest
-      sys_dmail_ttcontent_category_mm:
         system: latest
 
 extensions:
