@@ -33,5 +33,7 @@ else
 
 	echo -n "Fix  some user settings for non-production systems (Christian Z, Nikola S, Mario M, Daniel L., Kay Strobach)"
 	echo "UPDATE be_users SET disable=0 WHERE uid IN (9,34, 50, 58, 151);" | mysql -u${SOURCE_DB_USER} -h${SOURCE_DB_HOST} -p${SOURCE_DB_PASS} ${SOURCE_DB_NAME}
+	echo -n "Make editor an admin on non-production systems (Thomas L.)"
+	echo "UPDATE be_users SET admin=1 WHERE uid IN (132);" | mysql -u${SOURCE_DB_USER} -h${SOURCE_DB_HOST} -p${SOURCE_DB_PASS} ${SOURCE_DB_NAME}
 	echo "done"
 fi
