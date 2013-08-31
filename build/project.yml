@@ -355,8 +355,8 @@ extensions:
     version: 1.2.0
     svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/donation/trunk'
   powermail:
-    version: 1.6.5
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/powermail/tags/1.6.9/'
+    version: 1.6.10
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/powermail/tags/1.6.10/'
   typo3_agencies:
     version: 1.0.0
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/typo3_agencies/trunk/'
