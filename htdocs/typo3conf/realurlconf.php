@@ -624,7 +624,7 @@ $realurlconf = array (
 			'0' => array(
 				'GETvar' => 'tx_badges_main[action]',
 				'valueMap' => array(
-					'uncached' => 'listUncached'
+					'search' => 'listUncached'
 				),
 				'noMatch' => 'bypass'
 			),
