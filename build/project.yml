@@ -237,6 +237,8 @@ backup:
         system: latest
       tx_badges_domain_model_category:
         system: latest
+      tx_voice_domain_model_issue:
+        system: latest
 extensions:
   tt_news:
     version: 3.2.1
@@ -512,6 +514,9 @@ extensions:
   badges:
     version: '0.0.0'
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/badges/trunk/'
+  voice:
+    git: 'https://github.com/kaystrobach/TYPO3.voice.git'
+    git_branch: 'master'
 packaging:
   ignorePaths:
     - ~^build~
