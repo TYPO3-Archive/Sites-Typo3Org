@@ -32,6 +32,6 @@ else
 	SOURCE_DB_HOST=`getLocalConfValue "typo_db_host" "${SOURCE_DIR}"`
 
 	echo "Import test users for TER SOAP API testing"
-	mysql -u${SOURCE_DB_USER} -h${SOURCE_DB_HOST} -p${SOURCE_DB_PASS} ${SOURCE_DB_NAME} < assets/ter_testusers.sql
+	mysql -u${SOURCE_DB_USER} -h${SOURCE_DB_HOST} -p${SOURCE_DB_PASS} ${SOURCE_DB_NAME} < ${SOURCE_CIR}/scripts/post-install.d/assets/ter_testusers.sql
 	echo "done"
 fi
