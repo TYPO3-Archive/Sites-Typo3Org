@@ -514,6 +514,7 @@ $realurlconf = array (
 					'create' => 'create',
 					'save-changes' => 'update',
 					'deactivate' => 'deactivate',
+					'reactivate' => 'reactivate',
 					'asPDF' => 'pdf'
 				),
 				'noMatch' => 'bypass'
