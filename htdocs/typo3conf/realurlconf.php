@@ -619,6 +619,23 @@ $realurlconf = array (
 				)
 			),
 		),
+		// EXT: badges
+		'certified' => array(
+			'0' => array(
+				'GETvar' => 'tx_badges_main[action]',
+				'valueMap' => array(
+					'uncached' => 'listUncached'
+				),
+				'noMatch' => 'bypass'
+			),
+			'1' => array(
+				'GETvar' => 'tx_badges_main[controller]',
+				'noMatch' => 'bypass'
+			),
+			'2' => array(
+				'GETvar' => 'tx_badges_main[letter]',
+			),
+		),
 
 		// assign the actual page ids
 		'23' => 'ter',
@@ -650,6 +667,7 @@ $realurlconf = array (
 		'500' => 'securityBulletins',
 		'501' => 'securityBulletins',
 		'502' => 'securityBulletins',
+		'578' => 'certified',
 	),
 
 	'fileName' => array (
