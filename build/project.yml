@@ -182,6 +182,12 @@ backup:
           system: production
         tx_scheduler_task:
           system: production
+        tx_badges_domain_model_badge:
+          system: production
+        tx_badges_domain_model_category:
+          system: production
+        tx_voice_domain_model_issue:
+          system: production
         sys_dmail:
           system: production
         sys_dmail_group:
@@ -232,12 +238,6 @@ backup:
       tx_crawler_configuration:
         system: latest
       tx_staticinfotables_hotlist:
-        system: latest
-      tx_badges_domain_model_badge:
-        system: latest
-      tx_badges_domain_model_category:
-        system: latest
-      tx_voice_domain_model_issue:
         system: latest
 extensions:
   tt_news:
