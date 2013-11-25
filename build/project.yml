@@ -286,7 +286,7 @@ extensions:
     skip:
       dependency: true
   cleartypo3cache:
-    svn: 'https://svn.aoesupport.com/repository/extensions/aoe/cleartypo3cache/trunk'
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/cleartypo3cache/tags/1.0.1'
   cachecleaner:
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/cachecleaner/trunk@35983'
   dam:
