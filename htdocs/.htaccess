@@ -112,6 +112,23 @@ RewriteRule ^about/sites-made-with-typo3/ http://www.t3blog.com [R=302,L]
 RewriteRule ^go/exception/(.*)$ http://wiki.typo3.org/index.php/Exception$1 [L]
 RewriteRule ^go/issue/(.*)$ http://forge.typo3.org/issues/show/$1 [L]
 
+# redirect old documentation to the new server
+RewriteRule ^documentation/document-library/core-documentation/doc_core_api/(.*)$        http://docs.typo3.org/typo3cms/CoreApiReference/                [R=301,L]
+RewriteRule ^documentation/document-library/core-documentation/doc_core_cgl/(.*)$        http://docs.typo3.org/typo3cms/CodingGuidelinesReference/       [R=301,L]
+RewriteRule ^documentation/document-library/core-documentation/doc_core_inside/(.*)$     http://docs.typo3.org/typo3cms/InsideTypo3Reference/            [R=301,L]
+RewriteRule ^documentation/document-library/core-documentation/doc_core_services/(.*)$   http://docs.typo3.org/typo3cms/Typo3ServicesReference/          [R=301,L]
+RewriteRule ^documentation/document-library/core-documentation/doc_core_skinning/(.*)$   http://docs.typo3.org/typo3cms/SkinningReference/               [R=301,L]
+RewriteRule ^documentation/document-library/core-documentation/doc_core_tca/(.*)$        http://docs.typo3.org/typo3cms/TCAReference/                    [R=301,L]
+RewriteRule ^documentation/document-library/core-documentation/doc_core_ts/(.*)$         http://docs.typo3.org/typo3cms/TyposcriptSyntaxReference/       [R=301,L]
+RewriteRule ^documentation/document-library/core-documentation/doc_core_tsconfig/(.*)$   http://docs.typo3.org/typo3cms/TSconfigReference/               [R=301,L]
+RewriteRule ^documentation/document-library/core-documentation/doc_core_tsref/(.*)$      http://docs.typo3.org/typo3cms/TyposcriptReference/             [R=301,L]
+RewriteRule ^documentation/document-library/guides/doc_guide_install/(.*)$               http://docs.typo3.org/typo3cms/InstallationGuide/               [R=301,L]
+RewriteRule ^documentation/document-library/guides/doc_guide_security/(.*)$              http://docs.typo3.org/typo3cms/SecurityGuide/                   [R=301,L]
+RewriteRule ^documentation/document-library/guides/doc_l10nguide/(.*)$                   http://docs.typo3.org/typo3cms/FrontendLocalizationGuide/       [R=301,L]
+RewriteRule ^documentation/document-library/tutorials/doc_tut_editors/(.*)$              http://docs.typo3.org/typo3cms/EditorsTutorial/                 [R=301,L]
+RewriteRule ^documentation/document-library/tutorials/doc_tut_quickstart/(.*)$           http://docs.typo3.org/typo3cms/GettingStartedTutorial/          [R=301,L]
+RewriteRule ^documentation/document-library/tutorials/doc_tut_ts45/(.*)$                 http://docs.typo3.org/typo3cms/TyposcriptIn45MinutesTutorial/   [R=301,L]
+
 # Security:
 # - block access to TYPO3 source
 # - block access to existing backup files
