@@ -18,4 +18,13 @@ rm -f "${SOURCE_DIR}/htdocs/typo3conf/temp_CACHED_"*
 /usr/bin/php5 -q "${SOURCE_DIR}/htdocs/typo3/cli_dispatch.phpsh" cleartypo3cache all > /dev/null
 
 
+CONFIG_TYPO_DB_USERNAME=$(grep \$typo_db_username ${SOURCE_DIR}/htdocs/typo3conf/localconf.php | cut -d\' -f2)
+CONFIG_TYPO_DB_PASSWORD=$(grep \$typo_db_password ${SOURCE_DIR}/htdocs/typo3conf/localconf.php | cut -d\' -f2)
+CONFIG_TYPO_DB_HOST=$(grep \$typo_db_host ${SOURCE_DIR}/htdocs/typo3conf/localconf.php | cut -d\' -f2)
+CONFIG_TYPO_DB=$(grep -e \$typo_db[^_] ${SOURCE_DIR}/htdocs/typo3conf/localconf.php | cut -d\' -f2)
 
+# tx_realurl_urlencodecache is quite huge (due to SOLR) and the major reason of
+# performance issues after production deployment.
+# @see http://forge.typo3.org/issues/51639
+# Could be removed after http://forge.typo3.org/issues/54000 has been fixed
+mysql -u${CONFIG_TYPO_DB_USERNAME} -p${CONFIG_TYPO_DB_PASSWORD} -h${CONFIG_TYPO_DB_HOST} -D${CONFIG_TYPO_DB} -e "TRUNCATE tx_realurl_urlencodecache;"
