@@ -31,7 +31,7 @@ do
 	if [ "${ENVIRONMENT}" = "${internalEnvironment}" ] ; then
 		echo "Prepare permission for internal environment ${internalEnvironment} using script"
 		permissionsFixed=1
-	 	/usr/local/bin/deployment_t3org_t3o-${CONCRETE_ENVIRONMENT}_prepare_filesystem
+	 	/usr/local/bin/deployment_t3org_${CONCRETE_ENVIRONMENT}_prepare_filesystem
 	fi
 done
 
