@@ -91,15 +91,15 @@ $TYPO3_CONF_VARS['SYS']['sqlDebug'] = '0';
 $TYPO3_CONF_VARS['FE']['debug'] = '0';
 
 	// mailer settings
-$TYPO3_CONF_VARS['FE']['defaultMailFromAddress'] = '';
-$TYPO3_CONF_VARS['FE']['defaultMailFromName'] = '';
-$TYPO3_CONF_VARS['FE']['transport'] = 'mail';
-$TYPO3_CONF_VARS['FE']['transport_mbox_file'] = '';
-$TYPO3_CONF_VARS['FE']['transport_sendmail_command'] = '/usr/sbin/sendmail -bs';
-$TYPO3_CONF_VARS['FE']['transport_smtp_encrypt'] = '';
-$TYPO3_CONF_VARS['FE']['transport_smtp_password'] = '';
-$TYPO3_CONF_VARS['FE']['transport_smtp_server'] = 'localhost:25';
-$TYPO3_CONF_VARS['FE']['transport_smtp_username'] = '';
+$TYPO3_CONF_VARS['MAIL']['defaultMailFromAddress'] = '';
+$TYPO3_CONF_VARS['MAIL']['defaultMailFromName'] = '';
+$TYPO3_CONF_VARS['MAIL']['transport'] = 'mail';
+$TYPO3_CONF_VARS['MAIL']['transport_mbox_file'] = '';
+$TYPO3_CONF_VARS['MAIL']['transport_sendmail_command'] = '/usr/sbin/sendmail -bs';
+$TYPO3_CONF_VARS['MAIL']['transport_smtp_encrypt'] = '';
+$TYPO3_CONF_VARS['MAIL']['transport_smtp_password'] = '';
+$TYPO3_CONF_VARS['MAIL']['transport_smtp_server'] = 'localhost:25';
+$TYPO3_CONF_VARS['MAIL']['transport_smtp_username'] = '';
 
 	// binaries
 $TYPO3_CONF_VARS['SYS']['binSetup'] = 'java = /usr/bin/java';
