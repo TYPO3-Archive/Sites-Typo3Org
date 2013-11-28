@@ -25,8 +25,6 @@
 	<target name="test" depends="clean,phpunit-binary" description="Run UnitTests in Tests/Unit/PHPUnit">
 		<exec executable="./phpunit" failonerror="true" dir="${basedir}/bin">
 			<arg value="--configuration=../conf/${configuration.phpunit}" />
-			<arg value="--group" />
-			<arg value="${configuration.group}" />
 			<arg value="--exclude-group" />
 			<arg value="${configuration.excludegroup}" />
 			<arg value="--log-junit=${basedir}/build/logs/detail/${configuration.phpunit}" />
