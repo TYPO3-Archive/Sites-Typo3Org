@@ -1,0 +1,21 @@
+<phpunit>
+	<testsuites>
+		<testsuite name="basic">
+			<directory suffix="Test.php">
+				../Tests/
+			</directory>
+		</testsuite>
+<!-- example to run testcases of an extension (untested)
+		<testsuite name="my_extension">
+			<directory suffix="Test.php">
+				/var/www/t3org/t3o-deploy/htdocs/typo3conf/ext/my_extension/Tests/
+			</directory>
+		</testsuite>
+-->
+	</testsuites>
+	<groups>
+		<exclude>
+			<group>latest</group>
+		</exclude>
+	</groups>
+</phpunit>
