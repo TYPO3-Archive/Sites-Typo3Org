@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="acceptance" basedir="../../">
+<project name="unit" basedir="../../">
 	<!-- set ${configuration.phpunit} and ${configuration.group} in Jenkins to enviorment xml-->	
 
 	<target name="clean" description="Delete files from previous runs">
