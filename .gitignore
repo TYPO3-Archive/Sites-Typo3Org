@@ -1,0 +1,4 @@
+Tests/Unit/PHPUnit/bin
+Tests/Unit/PHPUnit/vendor
+Tests/Functional/PHPUnit/bin
+Tests/Functional/PHPUnit/vendor
