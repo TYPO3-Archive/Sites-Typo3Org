@@ -29,7 +29,7 @@ SOURCE_DIR=`dirname "${ABSPATH}"`
 
 #######################################################################
 permissionsFixed=0
-INTERNALENVIRONMENTS=( deploy latest training sandbox )
+INTERNALENVIRONMENTS=( t3o-deploy t3o-latest t3o-testing2)
 for internalEnvironment in ${INTERNALENVIRONMENTS[@]}
 do
 	if [ "${ENVIRONMENT}" = "${internalEnvironment}" ] ; then
