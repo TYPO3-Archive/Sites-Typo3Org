@@ -6,10 +6,7 @@ SOURCE_DIR=`dirname "${ABSPATH}"`
 
 #######################################################################
 
-echo "#########################################################"
-echo "# Starting crawler \"${i}\" at `date`"
-echo "#########################################################"
+echo "update SOLR connections"
 time /usr/bin/php5 -q "${SOURCE_DIR}/htdocs/typo3/cli_dispatch.phpsh" solr updateConnections
-echo "############################"
 
 exit 0;
