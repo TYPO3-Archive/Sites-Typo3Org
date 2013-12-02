@@ -334,7 +334,7 @@ extensions:
     svn: 'http://svn.t3o.typo3.org/extensions/ter/pmkshadowbox/tags/3.2.1'
   t3org_feedparser:
     version: 0.1.0
-    git: 'https://github.com/czenker/t3org_feedparser.git'
+    git: 'https://github.com/TYPO3-typo3org/t3org_feedparser.git'
     git_branch: 'master'
     skip:
       dependency: true
@@ -414,7 +414,7 @@ extensions:
       dependency: true
   t3org_flickrfeed:
     version: 0.0.0
-    git: 'https://github.com/czenker/t3org_flickrfeed.git'
+    git: 'https://github.com/TYPO3-typo3org/t3org_flickrfeed.git'
     git_branch: master
     skip:
       dependency: true
@@ -490,7 +490,7 @@ extensions:
     svn: 'http://svn.t3o.typo3.org/extensions/ter/pdf_generator2/tags/0.21.1'
   vimeo_connector:
     version: 1.0.0
-    git: 'https://github.com/czenker/vimeo_connector.git'
+    git: 'https://github.com/TYPO3-typo3org/vimeo_connector.git'
     git_branch: master
     skip:
       dependency: true
