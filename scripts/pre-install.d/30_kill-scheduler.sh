@@ -1,10 +1,5 @@
 #!/bin/bash -e
 
-echo "#######################################################################"
-echo " disabled script make backup from production environment"
-echo "#######################################################################"
-exit 0;
-
 #####################################
 # apply command line arguments to local variable
 
@@ -28,7 +23,7 @@ ABSPATH=$(cd "${0%/*}" 2>/dev/null; cd ../..; echo "${PWD}/${0##*/}")
 SOURCE_DIR=`dirname "${ABSPATH}"`
 
 #######################################################################
-permissionsFixed=0
+
 INTERNALENVIRONMENTS=( t3o-deploy t3o-latest t3o-testing2)
 for internalEnvironment in ${INTERNALENVIRONMENTS[@]}
 do
