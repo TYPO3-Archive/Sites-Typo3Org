@@ -29,7 +29,7 @@ for internalEnvironment in ${INTERNALENVIRONMENTS[@]}
 do
 	if [ "${ENVIRONMENT}" = "${internalEnvironment}" ] ; then
 		echo "Remove system_installed.txt to avoid race conditions"
-		rm ${TARGETPATH}/system_installed.txt
+		rm -f ${TARGETPATH}/system_installed.txt
 
 		echo "Killing scheduler for ${CONCRETE_ENVIRONMENT}"
 		pkill -f "${TARGETPATH}/htdocs/typo3/cli_dispatch.phpsh" || echo "no scheduler found"
