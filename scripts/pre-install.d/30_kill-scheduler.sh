@@ -32,7 +32,7 @@ do
 		rm ${TARGETPATH}/system_installed.txt
 
 		echo "Killing scheduler for ${CONCRETE_ENVIRONMENT}"
-		pkill -f "${TARGETPATH}/htdocs/typo3/cli_dispatch.phpsh"
+		pkill -f "${TARGETPATH}/htdocs/typo3/cli_dispatch.phpsh" || echo "no scheduler found"
 		echo "done"
 	fi
 done
