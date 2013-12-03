@@ -208,37 +208,37 @@ backup:
           system: production
     import:
       tx_templavoila_datastructure:
-        system: latest
+        system: t3o-latest
       tx_templavoila_tmplobj:
-        system: latest
+        system: t3o-latest
       static_countries:
-        system: latest
+        system: t3o-latest
       static_country_zones:
-        system: latest
+        system: t3o-latest
       static_currencies:
-        system: latest
+        system: t3o-latest
       static_languages:
-        system: latest
+        system: t3o-latest
       static_territories:
-        system: latest
+        system: t3o-latest
       static_tsconfig_help:
-        system: latest
+        system: t3o-latest
       sys_domain:
-        system: latest
+        system: t3o-latest
       sys_filemounts:
-        system: latest
+        system: t3o-latest
       sys_language:
-        system: latest
+        system: t3o-latest
       sys_template:
-        system: latest
+        system: t3o-latest
       sys_workspace:
-        system: latest
+        system: t3o-latest
       sys_workspace_stage:
-        system: latest
+        system: t3o-latest
       tx_crawler_configuration:
-        system: latest
+        system: t3o-latest
       tx_staticinfotables_hotlist:
-        system: latest
+        system: t3o-latest
 extensions:
   tt_news:
     version: 3.2.1
