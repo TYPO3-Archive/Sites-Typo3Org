@@ -45,7 +45,7 @@ do
 	if [ "${ENVIRONMENT}" = "${internalEnvironment}" ] ; then
 		echo "Applying bugfix for SOLR..."
 
-		patch -d ${TARGETPATH}/htdocs/typo3conf/ext/ -p0 < assets/fix-solr-on-integration.patch
+		patch -d ${TARGETPATH}/htdocs/typo3conf/ext/ -p0 < ${SOURCE_DIR}/scripts/post-install.d/assets/fix-solr-on-integration.patch
 
 		echo "done"
 	fi
