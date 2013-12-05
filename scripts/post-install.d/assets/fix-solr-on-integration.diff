@@ -1,0 +1,15 @@
+diff -ru solr/lib/SolrPhpClient/Apache/Solr/Service.php solr.fixed/lib/SolrPhpClient/Apache/Solr/Service.php
+--- solr/lib/SolrPhpClient/Apache/Solr/Service.php	Thu Dec  5 12:15:47 2013
++++ solr.fixed/lib/SolrPhpClient/Apache/Solr/Service.php	Thu Dec  5 12:16:59 2013
+@@ -485,9 +485,9 @@
+ 		// lazy load a default if one has not be set
+ 		if ($this->_httpTransport === false)
+ 		{
+-			require_once(dirname(__FILE__) . '/HttpTransport/FileGetContents.php');
++			require_once(dirname(__FILE__) . '/HttpTransport/Curl.php');
+ 
+-			$this->_httpTransport = new Apache_Solr_HttpTransport_FileGetContents();
++			$this->_httpTransport = new Apache_Solr_HttpTransport_Curl();
+ 		}
+ 
+ 		return $this->_httpTransport;
