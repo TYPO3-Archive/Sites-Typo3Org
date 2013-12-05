@@ -1,0 +1,19 @@
+# These urls should always be available because they are linked from somewhere else
+# Tested in RequiredUrlTest
+
+"/support/mailing-lists/"
+"/support/irc-chat/"
+"/donate"
+"/documentation/document-library/tutorials/doc_tut_quickstart/current/"
+"/download/installers/"
+
+# These URLs are part of the TYPO3 Core Source code (as of TYPO3 6.2)
+"/licenses"
+"/go/exception/CMS/1203699034"
+"/documentation/"
+"/support/professional-services/"
+"/contribute/"
+"/teams/security/"
+"/download/"
+"/about/typo3-the-cms/system-requirements/"
+"/donate/online-donation/"
