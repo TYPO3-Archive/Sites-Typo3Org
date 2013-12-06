@@ -17,3 +17,21 @@
 "/download/"
 "/about/typo3-the-cms/system-requirements/"
 "/donate/online-donation/"
+
+# redirect old documentation
+# @see http://forge.typo3.org/issues/53889
+"/documentation/document-library/core-documentation/doc_core_api/"
+"/documentation/document-library/core-documentation/doc_core_cgl/"
+"/documentation/document-library/core-documentation/doc_core_inside/"
+"/documentation/document-library/core-documentation/doc_core_services/"
+"/documentation/document-library/core-documentation/doc_core_skinning/"
+"/documentation/document-library/core-documentation/doc_core_tca/"
+"/documentation/document-library/core-documentation/doc_core_ts/"
+"/documentation/document-library/core-documentation/doc_core_tsconfig/"
+"/documentation/document-library/core-documentation/doc_core_tsref/"
+"/documentation/document-library/guides/doc_guide_install/"
+"/documentation/document-library/guides/doc_guide_security/"
+"/documentation/document-library/guides/doc_l10nguide/"
+"/documentation/document-library/tutorials/doc_tut_editors/"
+"/documentation/document-library/tutorials/doc_tut_quickstart/"
+"/documentation/document-library/tutorials/doc_tut_ts45/"
