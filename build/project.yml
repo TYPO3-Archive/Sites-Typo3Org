@@ -520,9 +520,9 @@ extensions:
   badges:
     version: '0.0.0'
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/badges/trunk/'
-  voice:
-    git: 'https://github.com/kaystrobach/TYPO3.voice.git'
-    git_branch: 'typo3.org'
+#  voice:
+#    git: 'https://github.com/kaystrobach/TYPO3.voice.git'
+#    git_branch: 'typo3.org'
 packaging:
   ignorePaths:
     - ~^build~
