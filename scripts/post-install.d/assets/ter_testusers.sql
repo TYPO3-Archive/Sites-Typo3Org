@@ -8,3 +8,10 @@ INSERT INTO fe_users(pid, username, password, deleted, disable) VALUES ('11', 'a
 # this user has some password with special chars
 # password "¢rÜpt|c"
 INSERT INTO fe_users(pid, username, password, deleted, disable) VALUES ('11', 'autotest-weiredo',   '$P$CMaGbWQ4WI7ROftZ1nmYkiKFqDYyxe1',   0, 0);
+
+# this user is in the "TER reviewer" group
+# password "reviewer-password"
+INSERT INTO fe_users(pid, username, password, usergroup, deleted, disable) VALUES ('11', 'autotest-reviewer',   '$P$C2TnUnDot0jCZumvCk9OokcxFT3Qhd.', 22, 0, 0);
+# this user is in the "TER Administrator" group
+# password "admin-password"
+INSERT INTO fe_users(pid, username, password, usergroup, deleted, disable) VALUES ('11', 'autotest-admin',   '$P$CGt3Pr.uPi928UTlIir3qdPqGb7zvk/', 26, 0, 0);
