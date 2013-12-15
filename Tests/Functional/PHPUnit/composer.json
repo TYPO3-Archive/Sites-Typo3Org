@@ -6,5 +6,8 @@
     },
     "config": {
         "bin-dir": "bin"
-    }
+    },
+	"autoload": {
+		"classmap": ["Helper/", "Tests/AbstractTestCase.php"]
+	}
 }

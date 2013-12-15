@@ -1,0 +1,10 @@
+# TYPO3 All news - RSS feed
+"/xml-feeds/rss.xml"
+# TYPO3 Association - RSS feed
+"/xml-feeds/select_category/6/rss.xml"
+# TYPO3 Community - RSS feed
+"/xml-feeds/select_category/3/rss.xml"
+# TYPO3 Development - RSS feed
+"/xml-feeds/select_category/1/rss.xml"
+# TYPO3 Security - RSS feed
+"/xml-feeds/select_category/9/rss.xml"
