@@ -5,11 +5,13 @@ class CsvParser {
 	 * parse a csv file that might have comment lines (starting with #)
 	 *
 	 * @param $filePath
-	 * @return array
+	 * @param int $minColumns
+	 * @param int $maxColumns
 	 * @throws RuntimeException
 	 * @throws InvalidArgumentException
+	 * @return array
 	 */
-	public function parseCsvFile($filePath) {
+	public function parseCsvFile($filePath, $minColumns = 1, $maxColumns = 1) {
 		$return = array();
 		if(!file_exists($filePath)) {
 			throw new \InvalidArgumentException(sprintf('File %s does not exist.', $filePath));
@@ -25,10 +27,23 @@ class CsvParser {
 				// ignore comment lines
 			} else {
 				$array = str_getcsv($line);
-				if(count($array) != 1) {
-					throw new \InvalidArgumentException(sprintf('Invalid line %d: Got %d arguments, but expected 1.', $lineNr, count($array)));
+				if(count($array) < $minColumns) {
+					throw new \InvalidArgumentException(sprintf(
+						'Invalid line %d: Got %d arguments, but expected at least %d.',
+						$lineNr,
+						count($array),
+						$minColumns
+					));
 				}
-				$return[] = $array;
+				if(count($array) > $maxColumns) {
+					throw new \InvalidArgumentException(sprintf(
+						'Invalid line %d: Got %d arguments, but expected at most %d.',
+						$lineNr,
+						count($array),
+						$maxColumns
+					));
+				}
+				$return[$array[0]] = $array;
 			}
 			$lineNr++;
 		}
