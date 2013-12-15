@@ -375,20 +375,20 @@ extensions:
     git_branch: 'master'
     skip:
       dependency: true
-  ter_doc:
-    version: 2.0.3
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/ter_doc/branches/renderQueue'
-  ter_doc_docbook:
-    version: 0.0.0
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/ter_doc_docbook/trunk'
-  ter_doc_html:
-    version: 0.0.0
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/ter_doc_html/trunk'
-  ter_doc_solrindexer:
-    version: 0.0.0
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/ter_doc_solrindexer/trunk/'
-    skip:
-      dependency: true
+#  ter_doc:
+#    version: 2.0.3
+#    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/ter_doc/branches/renderQueue'
+#  ter_doc_docbook:
+#    version: 0.0.0
+#    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/ter_doc_docbook/trunk'
+#  ter_doc_html:
+#    version: 0.0.0
+#    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/ter_doc_html/trunk'
+#  ter_doc_solrindexer:
+#    version: 0.0.0
+#    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/ter_doc_solrindexer/trunk/'
+#    skip:
+#      dependency: true
   ter_fe:
     version: 1.0.8
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/terfe/trunk'
@@ -398,9 +398,9 @@ extensions:
     git_branch: 'master'
     skip:
       dependency: true
-  ter_doc_sxw:
-    version: 1.0.0
-    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/ter_doc_sxw'
+#  ter_doc_sxw:
+#    version: 1.0.0
+#    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/ter_doc_sxw'
   docondemand:
     version: 2.0.1
     svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/docondemand/trunk'
