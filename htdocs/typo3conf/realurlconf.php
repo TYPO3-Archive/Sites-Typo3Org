@@ -693,6 +693,14 @@ $realurlconf = array (
 					'type' => 98987
 				)
 			),
+			'extensions.xml' => array(
+				'keyValues' => array(
+					'type' => 95831,
+					'tx_terfe2_pi1[format]' => 'rss',
+					'tx_terfe2_pi1[action]' => 'listLatest',
+					'tx_terfe2_pi1[controller]' => 'Extension'
+				)
+			),
 			// used for t3org_feedparser
 			'feed.xhr' => array(
 				'keyValues' => array(
