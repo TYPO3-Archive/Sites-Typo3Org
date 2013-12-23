@@ -693,7 +693,7 @@ $realurlconf = array (
 					'type' => 98987
 				)
 			),
-			'extensions.xml' => array(
+			'new-extensions.rss' => array(
 				'keyValues' => array(
 					'type' => 95831,
 					'tx_terfe2_pi1[format]' => 'rss',
