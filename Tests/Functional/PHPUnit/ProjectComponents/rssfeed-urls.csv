@@ -8,3 +8,6 @@
 "/xml-feeds/select_category/1/rss.xml"
 # TYPO3 Security - RSS feed
 "/xml-feeds/select_category/9/rss.xml"
+
+# ter_fe2
+"/new-extensions.rss"
