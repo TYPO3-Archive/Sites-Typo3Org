@@ -23,26 +23,18 @@ class RssFeedsTest extends AbstractTestCase {
 
 		// error handling when whatever is found is no valid XML
 		if($xmlElement === FALSE) {
-			$error = libxml_get_last_error();
-			if($error) {
-				/** @var LibXMLError $msg */
-				$msg = sprintf(
-					"Parser error in xml file with message \"%s\" in line %d, column %d.\nXML String was\n %s",
-					$error->message,
-					$error->line,
-					$error->column,
-					$xml
-				);
-			} else {
-				$msg = sprintf("The following could not be parsed as XML:\n%s", $xml);
-			}
-			$this->fail($msg);
+			$this->fail($this->displayXmlError(libxml_get_last_error()));
 		}
 
 		$dom = new DOMDocument();
 		$dom->loadXML($xml);
+		libxml_clear_errors();
+		$validated = $dom->schemaValidate(__DIR__ . '/../ProjectComponents/rss-2_0.xsd');
+		if(!$validated) {
+			$this->fail($this->displayXmlError(libxml_get_last_error()));
+		}
 		$this->assertTrue(
-			$dom->schemaValidate(__DIR__ . '/../ProjectComponents/rss-2_0.xsd'),
+			$validated,
 			sprintf('the document at %s is a valid RSS Feed', $url)
 		);
 
@@ -50,16 +42,52 @@ class RssFeedsTest extends AbstractTestCase {
 		$this->assertCount(1, $title, 'feed has a title');
 		$this->assertGreaterThan(3, strlen(trim((string)$title[0])), 'feed has a non-empty title');
 
-		$description = $xmlElement->xpath('/rss/channel/description');
-		$this->assertCount(1, $description, 'feed has a description');
-		$this->assertGreaterThan(3, strlen(trim((string)$description[0])), 'feed has a non-empty description');
-
 		$items = $xmlElement->xpath('/rss/channel/item');
+		$this->assertGreaterThan(0, count($items), 'feed has at least one item');
+
+		$lastBuildDate = $xmlElement->xpath('/rss/channel/lastBuildDate');
+		if($lastBuildDate) {
+			$lastBuildDateTime = strtotime($lastBuildDate[0]);
+			$this->assertNotSame(FALSE, $lastBuildDate, 'lastBuildDate is a parseable date');
+			$this->assertGreaterThanOrEqual(
+				strtotime('-3 months'),
+				$lastBuildDateTime,
+				sprintf('lastBuildDate (%s) is later than 3 months ago.', $lastBuildDate[0])
+			);
+
+			if($response->hasHeader('Last-Modified')) {
+				$lastModifiedHeader = $response->getHeader('Last-Modified');
+				$lastModifiedDateTime = strtotime($lastModifiedHeader);
+				$this->assertNotSame(FALSE, $lastModifiedHeader, 'Last-Modified Header is a parseable date');
+				// http://forge.typo3.org/issues/53084
+				$this->assertGreaterThanOrEqual(
+					$lastBuildDateTime,
+					$lastModifiedDateTime,
+					sprintf('Last-Modified header (%s) is greater than lastBuildDate (%s) in RSS.', $lastModifiedHeader, $lastBuildDate)
+				);
+			}
+		}
 		$this->assertGreaterThan(0, count($items), 'feed has at least one item');
 	}
 
 	public function getRequiredUrls() {
 		return $this->parseCsvFile(__DIR__ . '/../ProjectComponents/rssfeed-urls.csv');
+	}
+
+	protected function displayXmlError($error) {
+		if($error) {
+			/** @var LibXMLError $msg */
+			$msg = sprintf(
+				"Parser error with message \"%s\" in line %d, column %d.",
+				$error->message,
+				$error->line,
+				$error->column
+			);
+		} else {
+			$msg = "There was some error while parsing the XML. That's all I know - sorry.";
+		}
+
+		return $msg;
 	}
 
 }

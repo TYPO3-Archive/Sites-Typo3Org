@@ -23,7 +23,7 @@ class CsvParser {
 		}
 		$lineNr = 1;
 		while (($line = fgets($handle, 4096)) !== false) {
-			if(empty($line) || $line[0] == '#') {
+			if(trim($line) == '' || $line[0] == '#') {
 				// ignore comment lines
 			} else {
 				$array = str_getcsv($line);
