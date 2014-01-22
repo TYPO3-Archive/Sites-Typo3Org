@@ -63,7 +63,7 @@ class RssFeedsTest extends AbstractTestCase {
 				$this->assertGreaterThanOrEqual(
 					$lastBuildDateTime,
 					$lastModifiedDateTime,
-					sprintf('Last-Modified header (%s) is greater than lastBuildDate (%s) in RSS.', $lastModifiedHeader, $lastBuildDate)
+					sprintf('Last-Modified header (%s) is greater than lastBuildDate (%s) in RSS.', $lastModifiedHeader, $lastBuildDate[0])
 				);
 			}
 		}
