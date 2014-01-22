@@ -505,9 +505,9 @@ extensions:
     version: 1.0.5
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/linkhandler/tags/1.0.5/'
   direct_mail:
-    version: '3.1.0'
+    version: '3.1.2'
     git: 'git://git.typo3.org/TYPO3v4/Extensions/direct_mail.git'
-    git_tag: '3.1.0'
+    git_tag: '3.1.2'
   typo3org_newsletter:
     version: '0.0.0'
     git: 'https://github.com/dkd/typo3orgnewsletter.git'
