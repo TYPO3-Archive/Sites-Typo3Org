@@ -311,13 +311,9 @@ extensions:
   t3org_base:
     version: 0.1.1
     svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/t3org_base/trunk'
-    svn_dev: 'http://svn.t3o.typo3.org/extensions/projects/t3org/t3org_base/trunk'
-    svn_repository: 'http://svn.t3o.typo3.org/extensions/projects/t3org/t3org_base'
   t3org_configuration:
     version: 0.1.2
     svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/t3org_configuration/trunk'
-    svn_dev: 'http://svn.t3o.typo3.org/extensions/projects/t3org/t3org_configuration/trunk'
-    svn_repository: 'http://svn.t3o.typo3.org/extensions/projects/t3org/t3org_configuration'
   t3org_template:
     version: 0.1.0
     svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/t3org_template/trunk'
@@ -333,7 +329,6 @@ extensions:
   lowlevel_scheduler_task:
     version: 0.1.3.dev
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/lowlevel_scheduler_task/tags/0.1.2'
-    svn_dev: 'https://svn.typo3.org/TYPO3v4/Extensions/lowlevel_scheduler_task/trunk'
   naw_single_signon:
     version: 2.0.0
     svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/naw_single_signon'
