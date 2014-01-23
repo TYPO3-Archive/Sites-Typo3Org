@@ -1,15 +1,33 @@
+# This file describes how the system is to be build, which sources to use, which tables to copy etc.
 version_scheme: T3O.1.dev
 webroot: htdocs
 build: build
 svn_base: 'http://svn.t3o.typo3.org/'
 svn_method: checkout
+# this is the typo3 source that should be used
+# instead of "git_branch" the keywords "git_tag" and "git_commit" could also be used
 typo3:
   git: 'https://github.com/TYPO3-typo3org/TYPO3.CMS.git'
   git_branch: t3o/TYPO3_4-5-32
   dir: typo3_src-4.5
+# The migrator helps to install the TYPO3 project on different environments.
+# It can change settings in localconf.php, change TypoScript Constants and Setup, or change database records
+#
+# This file is basically a giant PHP array that defines what has to be changed on what environment.
+# For instance it holds the database credentials and SOLR connection information for our internal systems.
+# It is stored on the Jenkins server, because it contains sensitive data that should not be exposed to the public.
+#
+# You should barely need to edit it, but it comes in handy if you need different settings on different environments.
 migrator:
   file: /var/lib/jenkins/t3deploy/contrib/migrator/settings/projects/t3org/deployment_environments.inc.php
 backup:
+  # The deployment tool always creates all the folders required by TYPO3 (like typo3temp), but folders or files
+  # can be overridden.
+  #
+  # Note that a backup on the jenkins server is used for that. No remote connection to the production system is made
+  # when building a system.
+  # This also means that it is possible to exclude several files from the backup from production to the Jenkins server -
+  # those won't be available on the integration system then, of course.
   files:
     items:
       production-htdocs-uploads:
@@ -26,6 +44,15 @@ backup:
         recursive: true
         chmod: '0775'
         chgrp: www-data
+  # This defines how the database of the internal environments should be populated.
+  #
+  # Every time one of the internal systems is rebuilt, the whole database will be dropped. The deployment tool then
+  # creates the new database schema by basically doing the same thing as what could be done in the TYPO3 Install Tool.
+  # The empty database tables are then populated with this data.
+  # If a table is not listed here this just means that it will be empty on the internal environments.
+  #
+  # The production system works differently: The database will never be purged there, so only content from
+  # the "import" section will be overridden.
   database:
     setup:
       system: production
@@ -206,6 +233,12 @@ backup:
           system: production
         sys_dmail_ttcontent_category_mm:
           system: production
+    # Not all tables are taken from the production system. Some "administrative" tables come from the internal systems.
+    #
+    # Take TemplaVoila mapping as example. It would not make sense to configure this on the production system if it
+    # is not usable yet, because the template file or CSS have not yet been deployed on production.
+    # But if this is configured on the latest system (where the files are already present) it can be easily tested and
+    # shipped with the next deployment.
     import:
       tx_templavoila_datastructure:
         system: t3o-latest
@@ -239,6 +272,36 @@ backup:
         system: t3o-latest
       tx_staticinfotables_hotlist:
         system: t3o-latest
+# This lists the extensions that should be installed.
+#
+# Listing an extension here WILL
+#   * check out the extension to typo3conf/ext/
+#   * list the extension in "extList" of localconf.php
+#   * update the database schema
+# But it WILL NOT
+#   * hit the "Update" button on an extension
+#       Configuration can be set in ../htdocs/typo3conf/localconf.php
+#   * import data to the database
+#       Use the "database" section above
+#
+# SVN and GIT checkouts are supported.
+#
+# SVN:
+#   * Checkout the trunk
+#       svn: 'http://example.com/extension/foobar/trunk'
+#   * Checkout a specific revision
+#       svn: 'http://example.com/extension/foobar/trunk@1234'
+#
+# GIT:
+#   * Checkout a branch
+#       git: git://git.typo3.org/TYPO3v4/Extensions/foobar.git
+#       git_branch: master
+#   * Checkout a tag
+#       git: git://git.typo3.org/TYPO3v4/Extensions/foobar.git
+#       git_tag: v1.2.3
+#   * Checkout a commit
+#       git: git://git.typo3.org/TYPO3v4/Extensions/foobar.git
+#       git_commit: abcd1234
 extensions:
   tt_news:
     version: 3.5.1
@@ -519,6 +582,7 @@ extensions:
 #    git: 'https://github.com/kaystrobach/TYPO3.voice.git'
 #    git_branch: 'typo3.org'
 packaging:
+  # Paths that match these regular expressions will not be overridden during deployment to any environment
   ignorePaths:
     - ~^build~
     - ~^selenium~
