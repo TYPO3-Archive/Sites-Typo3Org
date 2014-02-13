@@ -304,8 +304,8 @@ backup:
 #       git_commit: abcd1234
 extensions:
   tt_news:
-    version: 3.5.1
-    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/tt_news/tags/3.5.1/'
+    version: 3.5.2
+    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/tt_news/tags/3.5.2/'
     skip:
       dependency: true
   t3org_base:
