@@ -212,4 +212,5 @@ $TYPO3_CONF_VARS['EXT']['extConf']['linkhandler'] = 'a:2:{s:32:"applyXclassHideS
 $TYPO3_CONF_VARS['EXT']['extConf']['typo3_agencies'] = 'a:2:{s:10:"storagePid";s:3:"329";s:14:"clearCachePids";s:7:"128,435";}';
 $TYPO3_CONF_VARS['EXT']['extConf']['ter_fe'] = 'a:3:{s:7:"WSDLURI";s:37:"http://typo3.org/wsdl/tx_ter_wsdl.php";s:14:"SOAPServiceURI";s:34:""http://typo3.org/index.php?id=ter";s:13:"repositoryDir";s:57:"/var/www/vhosts/typo3.org/home/site/htdocs/fileadmin/ter/";}';
 $TYPO3_CONF_VARS['EXT']['extConf']['purge'] = 'a:5:{s:15:"overrideDomains";s:9:"localhost";s:11:"expainsPids";s:0:"";s:16:"enablePurgeCalls";s:1:"1";s:27:"disableL10nmgrPurgeRequests";s:1:"0";s:28:"enableAsynchronousProcessing";s:1:"0";}';
+$TYPO3_CONF_VARS['EXT']['extConf']['amqp'] = 'a:5:{s:8:"username";s:0:"";s:8:"password";s:0:"";s:4:"host";s:12:"mq.typo3.org";s:4:"port";s:4:"5672";s:5:"vhost";s:0:"";}';
 ## INSTALL SCRIPT EDIT POINT TOKEN - all lines after this points may be changed by the install script!
