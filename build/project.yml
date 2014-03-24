@@ -576,10 +576,6 @@ extensions:
 #  voice:
 #    git: 'https://github.com/kaystrobach/TYPO3.voice.git'
 #    git_branch: 'typo3.org'
-  amqp:
-    version: '0.0.0'
-    git: 'https://github.com/TYPO3-typo3org/amqp.git'
-    git_branch: 'master'
 packaging:
   # Paths that match these regular expressions will not be overridden during deployment to any environment
   ignorePaths:
