@@ -129,6 +129,8 @@ RewriteRule ^documentation/document-library/tutorials/doc_tut_editors/(.*)$     
 RewriteRule ^documentation/document-library/tutorials/doc_tut_quickstart/(.*)$           http://docs.typo3.org/typo3cms/GettingStartedTutorial/          [R=301,L]
 RewriteRule ^documentation/document-library/tutorials/doc_tut_ts45/(.*)$                 http://docs.typo3.org/typo3cms/TyposcriptIn45MinutesTutorial/   [R=301,L]
 
+RewriteRule ^about/typo3-cms/system-requirements/?$ about/typo3-cms/system-requirements/ [R=301,L]
+
 # Security:
 # - block access to TYPO3 source
 # - block access to existing backup files
