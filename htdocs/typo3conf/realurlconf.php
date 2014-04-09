@@ -726,6 +726,18 @@ $realurlconf = array (
 	)
 );
 
+/* disable realurl decode cache for search pages
+ *
+ * facetting and pagination creates lots of urls that are rarely needed and flood the encode
+ * cache with useless entries. Disabling the encode cache for that pages prevents that.
+ *
+ * @ugly
+ * @see http://forge.typo3.org/issues/54000
+ */
+if(t3lib_div::_GET('q') || t3lib_div::_GET('tx_solr')) {
+	$realurlconf['init']['enableUrlEncodeCache'] = 0;
+}
+
 include('domainconf.php');
 
 $TYPO3_CONF_VARS['EXTCONF']['realurl'][$domainAlias['www']] = $realurlconf;
