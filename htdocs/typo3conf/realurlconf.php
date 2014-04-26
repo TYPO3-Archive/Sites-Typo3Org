@@ -637,6 +637,52 @@ $realurlconf = array (
 			),
 		),
 
+		// EXT:certification
+		'certification' => array(
+			array(
+				'GETvar' => 'tx_certifications_certlist[action]',
+				'valueMap' => array(
+					'list' => 'list',
+					'show' => 'show',
+				),
+				'noMatch' => 'bypass'
+			),
+			array(
+				'GETvar' => 'tx_certifications_certlist[controller]',
+				'noMatch' => 'bypass'
+			),
+//			array(
+//				'GETvar' => 'tx_certifications_certlist[sortby]',
+//				'valueMap' => array(
+//					'country' => 'country',
+//					'certificate' => 'certificate'
+//				),
+//				'noMatch' => 'bypass'
+//			),
+//			array(
+//				'GETvar' => 'tx_certifications_certlist[sorting]',
+//				'valueMap' => array(
+//					'asc' => 'asc',
+//					'desc' => 'desc'
+//				),
+//				'noMatch' => 'bypass'
+//			),
+			array(
+				'GETvar' => 'tx_certifications_certlist[user]',
+				'lookUpTable' => array (
+					'table' => 'tx_certifications_domain_model_user',
+					'id_field' => 'uid',
+					'alias_field' => 'CONCAT(last_name, "-", first_name)',
+					'addWhereClause' => ' AND NOT deleted AND NOT disable',
+					'useUniqueCache' => 1,
+					'useUniqueCache_conf' => array (
+						'strtolower' => 1,
+						'spaceCharacter' => '-',
+					),
+				),
+			)
+		),
+
 		// assign the actual page ids
 		'23' => 'ter',
 		'128' => 'agencies_show',
@@ -668,7 +714,7 @@ $realurlconf = array (
 		'501' => 'securityBulletins',
 		'502' => 'securityBulletins',
 		'762' => 'securityBulletins',
-		'578' => 'certified',
+		'578' => 'certification',
 	),
 
 	'fileName' => array (

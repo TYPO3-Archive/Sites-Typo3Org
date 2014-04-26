@@ -233,6 +233,12 @@ backup:
           system: production
         sys_dmail_ttcontent_category_mm:
           system: production
+        tx_certifications_domain_model_certificate:
+          system: production
+        tx_certifications_domain_model_certificatetype:
+          system: production
+        tx_certifications_domain_model_user:
+          system: production
     # Not all tables are taken from the production system. Some "administrative" tables come from the internal systems.
     #
     # Take TemplaVoila mapping as example. It would not make sense to configure this on the production system if it
@@ -573,6 +579,10 @@ extensions:
   badges:
     version: '0.0.0'
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/badges/trunk/'
+  certifications:
+    version: '0.0.0'
+    git: 'https://github.com/TYPO3-typo3org/t3org-certifications.git'
+    git_branch: 'master'
 #  voice:
 #    git: 'https://github.com/kaystrobach/TYPO3.voice.git'
 #    git_branch: 'typo3.org'
