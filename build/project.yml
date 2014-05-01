@@ -504,7 +504,7 @@ extensions:
     svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/cc_softlink/trunk'
   ajaxlogin:
     version: 0.0.1
-    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/ajaxlogin/trunk'
+    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/ajaxlogin/trunk@3013'
     skip:
       dependency: true
   t3o_ajaxlogin:
