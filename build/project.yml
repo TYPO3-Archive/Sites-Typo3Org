@@ -576,9 +576,6 @@ extensions:
     version: '0.0.0'
     git: 'https://github.com/dkd/typo3orgnewsletter.git'
     git_branch: 'master'
-  badges:
-    version: '0.0.0'
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/badges/trunk/'
   certifications:
     version: '0.0.0'
     git: 'https://github.com/TYPO3-typo3org/t3org-certifications.git'
