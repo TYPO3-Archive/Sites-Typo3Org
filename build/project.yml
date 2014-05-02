@@ -469,7 +469,7 @@ extensions:
     svn: 'http://svn.t3o.typo3.org/extensions/ter/tt_address/trunk'
   cz_simple_cal:
     version: 0.0.0
-    git: 'https://github.com/czenker/cz_simple_cal.git'
+    git: 'https://github.com/TYPO3-typo3org/cz_simple_cal.git'
     git_branch: master
     skip:
       dependency: true
