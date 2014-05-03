@@ -425,9 +425,9 @@ extensions:
     version: 1.6.10
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/powermail/tags/1.6.10/'
   wt_spamshield:
-    version: 1.1.1
+    version: 1.2.1
     git: 'git://git.typo3.org/TYPO3CMS/Extensions/wt_spamshield.git'
-    git_commit: 'b5ecc6fc9db705c141783a2b3fae7143473c89db' # v1.1.1
+    git_commit: '514623e86ecb527abb3325c68f60cf2954d2f9e4' # v1.2.1
   typo3_agencies:
     version: 1.0.0
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/typo3_agencies/trunk/'
