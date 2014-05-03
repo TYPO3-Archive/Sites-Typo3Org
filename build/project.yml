@@ -551,6 +551,10 @@ extensions:
     version: '0.0.0'
     git: 'https://github.com/TYPO3-typo3org/t3org-certifications.git'
     git_branch: 'master'
+  amqp:
+    version: '0.0.0'
+    git: 'https://github.com/TYPO3-typo3org/amqp.git'
+    git_branch: 'master'
 #  voice:
 #    git: 'https://github.com/kaystrobach/TYPO3.voice.git'
 #    git_branch: 'typo3.org'
