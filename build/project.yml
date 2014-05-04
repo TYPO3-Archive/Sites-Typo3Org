@@ -427,7 +427,8 @@ extensions:
   wt_spamshield:
     version: 1.2.1-dev
     git: 'git://git.typo3.org/TYPO3CMS/Extensions/wt_spamshield.git'
-    git_commit: '7a02c74c6f28d684ccee6cd01b403ec44b51f8de' # v1.2.1-dev
+    # v1.2.1-dev
+    git_commit: '7a02c74c6f28d684ccee6cd01b403ec44b51f8de'
   typo3_agencies:
     version: 1.0.0
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/typo3_agencies/trunk/'
