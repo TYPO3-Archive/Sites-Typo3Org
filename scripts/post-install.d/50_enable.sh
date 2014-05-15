@@ -51,7 +51,7 @@ else
 	SOURCE_DB_HOST=`getLocalConfValue "typo_db_host" "${SOURCE_DIR}"`
 
 	echo "Give users an admin login who do not have one on production."
-	echo "Christian Zenker, Thomas Löffler, Kay Strobach, Tomas Norre, Sascha Schmidt)"
-	echo "UPDATE be_users SET disable=0, admin=1 WHERE uid IN (9, 132, 151, 153, 166);" | mysql -u${SOURCE_DB_USER} -h${SOURCE_DB_HOST} -p${SOURCE_DB_PASS} ${SOURCE_DB_NAME}
+	echo "Christian Zenker, Thomas Löffler, Kay Strobach, Tomas Norre, Sascha Schmidt, Björn Jacob)"
+	echo "UPDATE be_users SET disable=0, admin=1 WHERE uid IN (9, 132, 151, 153, 166, 168);" | mysql -u${SOURCE_DB_USER} -h${SOURCE_DB_HOST} -p${SOURCE_DB_PASS} ${SOURCE_DB_NAME}
 	echo "done"
 fi
