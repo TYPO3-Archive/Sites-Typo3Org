@@ -50,9 +50,8 @@ else
 	SOURCE_DB_PASS=`getLocalConfValue "typo_db_password" "${SOURCE_DIR}"`
 	SOURCE_DB_HOST=`getLocalConfValue "typo_db_host" "${SOURCE_DIR}"`
 
-	echo -n "Fix  some user settings for non-production systems (Christian Z, Nikola S, Mario M, Daniel L., Kay Strobach, Tomas Norre, Sascha Schmidt)"
-	echo "UPDATE be_users SET disable=0 WHERE uid IN (9,34, 50, 58, 151, 153, 166);" | mysql -u${SOURCE_DB_USER} -h${SOURCE_DB_HOST} -p${SOURCE_DB_PASS} ${SOURCE_DB_NAME}
-	echo -n "Make editor an admin on non-production systems (Thomas L.)"8
-	echo "UPDATE be_users SET admin=1 WHERE uid IN (132);" | mysql -u${SOURCE_DB_USER} -h${SOURCE_DB_HOST} -p${SOURCE_DB_PASS} ${SOURCE_DB_NAME}
+	echo "Give users an admin login who do not have one on production."
+	echo "Christian Zenker, Nikola S, Mario M, Daniel L., Thomas Löffler, Kay Strobach, Tomas Norre, Sascha Schmidt)"
+	echo "UPDATE be_users SET disable=0, admin=1 WHERE uid IN (9, 34, 50, 58, 132, 151, 153, 166);" | mysql -u${SOURCE_DB_USER} -h${SOURCE_DB_HOST} -p${SOURCE_DB_PASS} ${SOURCE_DB_NAME}
 	echo "done"
 fi
