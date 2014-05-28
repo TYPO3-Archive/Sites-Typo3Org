@@ -69,6 +69,7 @@ $TYPO3_CONF_VARS['SYS']['UTF8filesystem'] = '1';
 $TYPO3_CONF_VARS['SYS']['maxFileNameLength'] = '120';
 $TYPO3_CONF_VARS['SYS']['useCachingFramework'] = false;
 $TYPO3_CONF_VARS['SYS']['recursiveDomainSearch'] = '1';
+$TYPO3_CONF_VARS['SYS']['trustedHostsPattern'] = '^[a-z0-9\-_\.]*t3org\.dev$';
 
 	// Image Configurations
 $TYPO3_CONF_VARS['GFX']['im_path'] = '/usr/bin/';
