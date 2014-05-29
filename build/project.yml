@@ -422,8 +422,9 @@ extensions:
     version: 1.2.0
     svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/donation/trunk'
   powermail:
-    version: 1.6.10
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/powermail/tags/1.6.10/'
+    version: 1.6.11
+    git: 'git://git.typo3.org/TYPO3CMS/Extensions/powermail.git'
+    git_tag: '1.6.11'
   wt_spamshield:
     version: 1.2.1-dev
     git: 'git://git.typo3.org/TYPO3CMS/Extensions/wt_spamshield.git'
