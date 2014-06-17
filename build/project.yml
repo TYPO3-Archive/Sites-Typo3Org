@@ -317,12 +317,15 @@ extensions:
   t3org_base:
     version: 0.1.1
     git: 'git@github.com:TYPO3-typo3org/t3org_base.git'
+    git_branch: 'master'
   t3org_configuration:
     version: 0.1.2
     git: 'git@github.com:TYPO3-typo3org/t3org_configuration.git'
+    git_branch: 'master'
   t3org_template:
     version: 0.1.0
     git: 'git@github.com:TYPO3-typo3org/t3org_template.git'
+    git_branch: 'master'
   be_groups:
     version: 0.3.3-dev
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/be_groups/trunk'
@@ -416,8 +419,9 @@ extensions:
     git: 'git://git.typo3.org/TYPO3CMS/Extensions/solr.git'
     git_tag: '2.8.3'
   solr_redmine:
-    version: 0.0.0
-    svn: 'http://svn.t3o.typo3.org/extensions/ter/solr_redmine/trunk'
+    version: 0.9.0
+    git: 'git://git.typo3.org/TYPO3CMS/Extensions/solr_redmine.git'
+    git_commit: '83d566c129410c0063b4bf10fb81a51de4acad4f'
   donation:
     version: 1.2.0
     svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/donation/trunk'
@@ -484,11 +488,13 @@ extensions:
   ajaxlogin:
     version: 0.0.1
     git: 'git://github.com/TYPO3-typo3org/ajaxlogin.git'
+    git_branch: 'master'
     skip:
       dependency: true
   t3o_ajaxlogin:
     version: 0.0.0
     git: 'git@github.com:TYPO3-typo3org/t3o_ajaxlogin.git'
+    git_branch: 'master'
   geshilib:
     version: 1.0.0
     svn: 'http://svn.t3o.typo3.org/extensions/ter/geshilib/official/1.0.0'
