@@ -316,13 +316,13 @@ extensions:
       dependency: true
   t3org_base:
     version: 0.1.1
-    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/t3org_base/trunk'
+    git: 'git@github.com:TYPO3-typo3org/t3org_base.git'
   t3org_configuration:
     version: 0.1.2
-    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/t3org_configuration/trunk'
+    git: 'git@github.com:TYPO3-typo3org/t3org_configuration.git'
   t3org_template:
     version: 0.1.0
-    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/t3org_template/trunk'
+    git: 'git@github.com:TYPO3-typo3org/t3org_template.git'
   be_groups:
     version: 0.3.3-dev
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/be_groups/trunk'
@@ -483,12 +483,12 @@ extensions:
     svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/cc_softlink/trunk'
   ajaxlogin:
     version: 0.0.1
-    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/ajaxlogin/trunk'
+    git: 'git://github.com/TYPO3-typo3org/ajaxlogin.git'
     skip:
       dependency: true
   t3o_ajaxlogin:
     version: 0.0.0
-    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/t3o_ajaxlogin/trunk'
+    git: 'git@github.com:TYPO3-typo3org/t3o_ajaxlogin.git'
   geshilib:
     version: 1.0.0
     svn: 'http://svn.t3o.typo3.org/extensions/ter/geshilib/official/1.0.0'
