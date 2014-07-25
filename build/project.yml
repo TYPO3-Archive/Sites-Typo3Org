@@ -465,6 +465,12 @@ extensions:
     git_branch: master
     skip:
       dependency: true
+  t3org_spamremover:
+    version: 0.0.0
+    git: 'https://github.com/TYPO3-typo3org/t3org_spamremover.git'
+    git_branch: master
+    skip:
+      dependency: true
   randombanners:
     version: 0.0.1
     svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/randombanners/trunk'
