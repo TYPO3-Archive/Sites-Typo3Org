@@ -495,12 +495,6 @@ extensions:
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/purge/trunk'
   js_css_optimizer:
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/js_css_optimizer/trunk'
-  cc_langguess:
-    version: 1.0.0
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/cc_langguess/trunk'
-  cc_textcat:
-    version: 2.0.0
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/cc_textcat/trunk'
   linkhandler:
     version: 1.0.5
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/linkhandler/tags/1.0.5/'
