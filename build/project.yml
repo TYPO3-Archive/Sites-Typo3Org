@@ -467,7 +467,7 @@ extensions:
       dependency: true
   t3org_spamremover:
     version: 0.0.0
-    git: 'https://github.com/TYPO3-typo3org/t3org_spamremover.git'
+    git: 'git@github.com:TYPO3-typo3org/t3org_spamremover.git'
     git_branch: master
     skip:
       dependency: true
