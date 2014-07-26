@@ -141,16 +141,6 @@ backup:
           system: production
         tx_solr_indexqueue_item:
           system: production
-        tx_terdoc_categories:
-          system: production
-        tx_terdoc_manualscategories:
-          system: production
-        tx_terdoc_manualspagecache:
-          system: production
-        tx_terdoc_manuals:
-          system: production
-        tx_terdoc_renderproblems:
-          system: production
         tx_ter_extensiondetails:
           system: production
         tx_ter_extensionkeys:
