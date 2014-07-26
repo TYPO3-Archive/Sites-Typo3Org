@@ -48,6 +48,7 @@ $TYPO3_CONF_VARS['BE']['elementVersioningOnly'] = '1';
 $TYPO3_CONF_VARS['BE']['flexformForceCDATA'] = '1';
 $TYPO3_CONF_VARS['BE']['allowDonateWindow'] = '0';
 $TYPO3_CONF_VARS['BE']['versionNumberInFilename'] = '1';
+$TYPO3_CONF_VARS['BE']['maxFileSize'] = 25 * 1024;
 
 $TYPO3_CONF_VARS['BE']['pageTree']['preloadLimit'] = '500';
 # The next line is currently needed because of #25431. It can be removed on TYPO3 4.5.3 and later.
