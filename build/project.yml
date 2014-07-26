@@ -456,9 +456,6 @@ extensions:
     git_branch: master
     skip:
       dependency: true
-  cc_softlink:
-    version: 0.0.0
-    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/cc_softlink/trunk'
   ajaxlogin:
     version: 0.0.1
     git: 'git://github.com/TYPO3-typo3org/ajaxlogin.git'
