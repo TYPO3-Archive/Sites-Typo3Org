@@ -155,12 +155,6 @@ backup:
           system: production
         sys_ter:
           system: production
-        tx_links:
-          system: production
-        tx_links_cat:
-          system: production
-        tx_links_mm_cat:
-          system: production
         tx_pastecode_code:
           system: production
         tx_odsfacebook_auth:
@@ -475,9 +469,6 @@ extensions:
     git_branch: master
     skip:
       dependency: true
-  links:
-    version: 0.0.0
-    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/links/trunk'
   cc_softlink:
     version: 0.0.0
     svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/cc_softlink/trunk'
