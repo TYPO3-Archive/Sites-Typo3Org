@@ -367,9 +367,6 @@ extensions:
   t3o_userimage:
     version: 0.2.2
     svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/t3o_userimage'
-  randfeuserlist:
-    version: 0.0.1
-    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/randfeuserlist/trunk'
   pmkshadowbox:
     version: 3.2.1
     svn: 'http://svn.t3o.typo3.org/extensions/ter/pmkshadowbox/tags/3.2.1'
