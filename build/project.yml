@@ -516,7 +516,7 @@ extensions:
     git_branch: 'master'
   voice:
     git: 'https://github.com/kaystrobach/TYPO3.voice.git'
-    git_branch: 'master'
+    git_tag: '0.0.67'
 packaging:
   # Paths that match these regular expressions will not be overridden during deployment to any environment
   ignorePaths:
