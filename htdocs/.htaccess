@@ -156,6 +156,8 @@ RewriteRule ^typo3/sysext/workspaces/Resources/Public - [L]
 RewriteRule ^typo3/mod.php - [L]
 RewriteRule ^typo3conf/ext/dam/mod_file/.* - [L]
 
+# block access to core and third party extension configuration files
+RewriteRule ^(typo3conf/ext|typo3/sysext)/.*/(ExtensionBuilder.json|Tests|Configuration|Resources/Private)  - [R=404,L]
 
 # if backend is called and HTTP HOST is not backend.domain, then redirect to typo3 information page
 # RewriteCond %{HTTP_HOST} !^backend\.
