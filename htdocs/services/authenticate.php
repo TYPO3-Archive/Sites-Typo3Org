@@ -1,5 +1,4 @@
 <?php
-
 error_reporting(E_ALL & ~E_NOTICE);
 
 require('api-keys.php');
@@ -29,7 +28,19 @@ if (empty($_SERVER['HTTPS'])) {
 if (isset($apiKeys[$_SERVER['HTTP_X_FORWARDED_FOR']]) && $apiKeys[$_SERVER['HTTP_X_FORWARDED_FOR']] === $_POST['apiKey']) {
 	if (credentialsValid($_POST['username'], $_POST['password']) === TRUE) {
 		syslog(LOG_NOTICE, 'authenticate.php: Credentials for user ' . $_POST['username'] . ' are valid.');
-		exit('1');
+		if ($_POST['returnUserInfo']) {
+			$userInfo = getUserInfo($_POST['username']);
+			if (!is_array($userInfo)) {
+				exit ('2');
+			}
+			$nameParts = explode(' ', $userInfo['name'], 2);
+			$userInfo['firstName'] = isset($nameParts[0]) ? $nameParts[0] : $userInfo['name'];
+			$userInfo['lastName'] = isset($nameParts[1]) ? $nameParts[1] : $userInfo['name'];
+			echo(json_encode($userInfo));
+			exit;
+		} else {
+			exit('1');
+		}
 	} else {
 		syslog(LOG_NOTICE, 'authenticate.php: Credentials for user ' . $_POST['username'] . ' not found or invalid.');
 	}
@@ -67,6 +78,14 @@ function credentialsValid($username, $password) {
 		}
 	}
 	return FALSE;
+}
+
+function getUserInfo($username) {
+	$userData = array();
+	mysql_select_db(TYPO3_DB_NAME, mysql_connect(TYPO3_DB_HOST, TYPO3_DB_USERNAME, TYPO3_DB_PASSWORD));
+	mysql_query('SET NAMES utf8');
+	$result = mysql_query('SELECT username, email, name, tx_t3ocla_hassignedcla FROM fe_users WHERE username = \'' . $username . '\'');
+	return mysql_fetch_assoc($result);
 }
 
 /***************************************************************
