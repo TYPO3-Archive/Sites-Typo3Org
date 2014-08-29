@@ -735,7 +735,6 @@ $realurlconf = array (
 		'560' => 'calendar',
 		'423' => 'agencies',
 		'598' => 'case_studies',
-		'720' => 'case_studies',
 		'444' => 'calendarSubmission',
 		'460' => 'ajaxlogin',
 		'461' => 'calendarArchive',
