@@ -545,6 +545,16 @@ extensions:
   voice:
     git: 'https://github.com/kaystrobach/TYPO3.voice.git'
     git_tag: '0.0.67'
+  # can be removed after TYPO3 6.2 is deployed to production
+    dam_falmigration:
+      version: 0.1.4-dev
+      git: https://github.com/b13/t3ext-dam_falmigration.git
+      git_branch: master
+    # can be removed after TYPO3 6.2 is deployed to production
+    cli_update_wizard:
+      version: 0.0.0-dev
+      git: https://github.com/czenker/t3ext-cli_update_wizard.git
+      git_branch: master
 packaging:
   # Paths that match these regular expressions will not be overridden during deployment to any environment
   ignorePaths:
