@@ -6,7 +6,7 @@ return array(
 		'explicitADmode' => 'explicitAllow',
 		'fileCreateMask' => '0664',
 		'flexformForceCDATA' => '1',
-		'folderCreateMask' => '02775',
+		'folderCreateMask' => '0775',
 		'installToolPassword' => 'f0263f26a9409df1a61156366543bce6',
 		'loginSecurityLevel' => 'rsa',
 		'maxFileSize' => 25600,
