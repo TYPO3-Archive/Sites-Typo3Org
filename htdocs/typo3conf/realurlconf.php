@@ -20,7 +20,7 @@ $realurlconf = array (
 
 	'pagePath' => array (
 		'type' => 'user',
-		'userFunc' => 'EXT:realurl/class.tx_realurl_pagepath.php:&tx_realurl_pagepath->main',
+		'userFunc' => 'Tx_Realurl_PagePath->main',
 		'spaceCharacter' => '-',
 		'cacheTimeOut' => '0',
 		'languageGetVar' => 'L',

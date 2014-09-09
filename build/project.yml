@@ -284,8 +284,9 @@ backup:
 #       git_commit: abcd1234
 extensions:
   tt_news:
-    version: 3.5.2
-    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/tt_news/tags/3.5.2/'
+    version: 3.6.0
+    git: 'git://git.typo3.org/TYPO3CMS/Extensions/tt_news.git'
+    git_tag: tt_news_3-6-0
     skip:
       dependency: true
   t3org_base:
@@ -301,75 +302,85 @@ extensions:
     git: 'git@github.com:TYPO3-typo3org/t3org_template.git'
     git_branch: 'master'
   be_groups:
-    version: 0.3.3-dev
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/be_groups/trunk'
+    version: 1.2.1-dev
+    git: 'https://github.com/michaelklapper/be_groups.git'
+    git_commit: 503d69edc9ca11a200620399b74da25431381eba
   crawler:
-    version: 3.3.6
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/crawler/tags/V_3-3-6'
-  kb_tv_cont_slide:
-    version: 0.4.3
-    svn: 'http://svn.t3o.typo3.org/extensions/ter/kb_tv_cont_slide/official/0.4.3'
+    version: 3.6.dev
+    git: 'git://git.typo3.org/TYPO3CMS/Extensions/crawler.git'
+#    git_branch: TYPO3_6-2
+    git_commit: 2631fce8ca2d46e3831b8ab97d144bf7501bed27
+    # does not work with TYPO3 6.2 atm
+    # @see
+#  kb_tv_cont_slide:
+#    version: 0.5.0
+#    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/kb_tv_cont_slide/trunk@85813'
   lowlevel_scheduler_task:
     version: 0.1.3.dev
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/lowlevel_scheduler_task/tags/0.1.2'
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/lowlevel_scheduler_task/trunk@86293'
   naw_single_signon:
     version: 2.0.0
-    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/naw_single_signon'
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/naw_single_signon/sso-typo3-extension/trunk/@61178'
   realurl:
-    git: 'git://github.com/tolleiv/Realurl.git'
-    git_branch: aoe_modifications
+    version: 1.12.7.AOE
+    git: 'https://github.com/AOEmedia/Realurl.git'
+#    git_branch: 'aoe/1_12_7'
+    git_commit: 994d051777f02da782bac0e170c5e80946a418e8
   templavoila:
+    version: 1.9.2
     git: 'git://git.typo3.org/TYPO3CMS/Extensions/templavoila.git'
-    git_tag: '1_8_0'
+    git_tag: '1.9.2'
   static_info_tables:
-    version: 2.4.0
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/static_info_tables/trunk@71423'
+    version: 6.1.0
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/static_info_tables/tags/Version-6-1-0'
     skip:
       dependency: true
-  cleartypo3cache:
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/cleartypo3cache/tags/1.0.1'
-  cachecleaner:
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/cachecleaner/trunk@35983'
-  dam:
-    version: 1.2.0
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/dam/dam/tags/dam_1-2-0/'
-  dam_ttcontent:
-    version: 1.2.0
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/dam/dam_ttcontent/tags/dam_ttcontent_1-2-0/'
-  dam_catedit:
-    version: 1.2.0
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/dam/dam_catedit/tags/dam_catedit_1-2-0/'
-  dam_index:
-    version: 1.2.0
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/dam/dam_index/tags/dam_index_1-2-0/'
-  css_filelinks:
-    version: 0.2.19
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/css_filelinks/trunk@45907'
-  dam_filelinks:
-    version: 0.3.21
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/dam_filelinks/trunk@45907'
-  dam_tv_connector:
-    version: 0.2.0
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/dam_tv_connector/trunk@45907'
-  dam_ttnews:
-    version: 0.1.12
-    svn: 'http://svn.t3o.typo3.org/extensions/ter/dam_ttnews/offcial/0.1.12'
-  extbase_dam:
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/extbase_dam/trunk'
-    skip:
-      dependency: true
-  ed_transliteration:
-    version: 1.1.7
-    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/ed_transliteration/trunk'
-  ed_tv:
-    version: 0.0.3
-    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/ed_tv/trunk'
+# @ see https://forge.typo3.org/issues/61408
+#  cleartypo3cache:
+#    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/cleartypo3cache/tags/1.0.1'
+#  cachecleaner:
+#    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/cachecleaner/trunk@35983'
+#  dam:
+#    version: 1.2.0
+#    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/dam/dam/tags/dam_1-2-0/'
+#  dam_ttcontent:
+#    version: 1.2.0
+#    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/dam/dam_ttcontent/tags/dam_ttcontent_1-2-0/'
+#  dam_catedit:
+#    version: 1.2.0
+#    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/dam/dam_catedit/tags/dam_catedit_1-2-0/'
+#  dam_index:
+#    version: 1.2.0
+#    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/dam/dam_index/tags/dam_index_1-2-0/'
+#  css_filelinks:
+#    version: 0.2.19
+#    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/css_filelinks/trunk@45907'
+#  dam_filelinks:
+#    version: 0.3.21
+#    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/dam_filelinks/trunk@45907'
+#  dam_tv_connector:
+#    version: 0.2.0
+#    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/dam_tv_connector/trunk@45907'
+#  dam_ttnews:
+#    version: 0.1.12
+#    svn: 'http://svn.t3o.typo3.org/extensions/ter/dam_ttnews/offcial/0.1.12'
+#  extbase_dam:
+#    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/extbase_dam/trunk'
+#    skip:
+#      dependency: true
+#  ed_transliteration:
+#    version: 1.1.7
+#    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/ed_transliteration/trunk'
+#  ed_tv:
+#    version: 0.0.3
+#    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/ed_tv/trunk'
   t3o_userimage:
     version: 0.2.2
     svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/t3o_userimage'
   pmkshadowbox:
     version: 3.2.1
-    svn: 'http://svn.t3o.typo3.org/extensions/ter/pmkshadowbox/tags/3.2.1'
+    git: 'http://gitlab.sgalinski.de:3000/typo3/pmkshadowbox.git'
+    git_tag: '3.4.0'
   t3org_feedparser:
     version: 0.1.0
     git: 'https://github.com/TYPO3-typo3org/t3org_feedparser.git'
@@ -380,8 +391,9 @@ extensions:
     version: 0.2.0
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/ttnews_irre/trunk'
   pagebrowse:
-    version: 1.3.0
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/pagebrowse/trunk'
+    version: 1.3.4
+    git: 'https://github.com/dmitryd/typo3-pagebrowse.git'
+    git_tag: '1_3_4'
   pagebrowse_tt_news:
     version: 0.1.0
     svn: 'http://svn.t3o.typo3.org/extensions/ter/pagebrowse_tt_news/tags/0.1.0'
@@ -396,10 +408,10 @@ extensions:
   donation:
     version: 1.2.0
     svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/donation/trunk'
-  powermail:
-    version: 1.6.11
-    git: 'git://git.typo3.org/TYPO3CMS/Extensions/powermail.git'
-    git_tag: '1.6.11'
+#  powermail:
+#    version: 1.6.11
+#    git: 'git://git.typo3.org/TYPO3CMS/Extensions/powermail.git'
+#    git_tag: '1.6.11'
   wt_spamshield:
     version: 1.2.1-dev
     git: 'git://git.typo3.org/TYPO3CMS/Extensions/wt_spamshield.git'
@@ -423,8 +435,8 @@ extensions:
     skip:
       dependency: true
   comments:
-    version: 1.5.3
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/comments/tags/1_5_3/'
+    version: 1.7.1
+    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/comments/trunk@77762'
   t3org_comments:
     version: 0.0.0
     svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/t3org_comments/trunk/'
@@ -442,23 +454,28 @@ extensions:
     git_branch: master
     skip:
       dependency: true
-  randombanners:
-    version: 0.0.1
-    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/randombanners/trunk'
-    skip:
-      dependency: true
+  # does not work with TYPO3 6.2 atm
+  # @see https://forge.typo3.org/issues/61424
+#  randombanners:
+#    version: 0.0.1
+#    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/randombanners/trunk'
+#    skip:
+#      dependency: true
   tt_address:
-    version: 2.2.1
-    svn: 'http://svn.t3o.typo3.org/extensions/ter/tt_address/trunk'
-  cz_simple_cal:
-    version: 0.0.0
-    git: 'https://github.com/TYPO3-typo3org/cz_simple_cal.git'
-    git_branch: master
-    skip:
-      dependency: true
+    version: 2.3.5
+    git: 'git://git.typo3.org/TYPO3CMS/Extensions/tt_address.git'
+    git_tag: '2.3.5'
+  # does not work with TYPO3 6.2 atm
+  # @see https://forge.typo3.org/issues/61425
+#  cz_simple_cal:
+#    version: 0.0.0
+#    git: 'https://github.com/TYPO3-typo3org/cz_simple_cal.git'
+#    git_branch: master
+#    skip:
+#      dependency: true
   ajaxlogin:
     version: 0.0.1
-    git: 'git://github.com/TYPO3-typo3org/ajaxlogin.git'
+    git: 'https://github.com/TYPO3-typo3org/ajaxlogin.git'
     git_branch: 'master'
     skip:
       dependency: true
@@ -478,34 +495,45 @@ extensions:
   t3o_cla:
     version: 0.2.0
     svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/t3o_cla/trunk'
-  ods_facebook:
-    version: 0.0.0
-    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/ods_facebook/trunk'
-  ed_extbase:
-    version: 0.0.0
-    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/ed_extbase/trunk'
-    skip:
-      dependency: true
-  ed_damcatsort:
-    version: 0.0.0
-    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/ed_damcatsort/trunk'
-  cacheinfo:
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/cacheinfo/trunk'
-  purge:
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/purge/trunk'
-  js_css_optimizer:
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/js_css_optimizer/trunk'
+#  ods_facebook:
+#    version: 0.0.0
+#    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/ods_facebook/trunk'
+#  ed_extbase:
+#    version: 0.0.0
+#    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/ed_extbase/trunk'
+#    skip:
+#      dependency: true
+#  ed_damcatsort:
+#    version: 0.0.0
+#    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/ed_damcatsort/trunk'
+  # does not work with TYPO3 6.2 atm
+  # @see https://forge.typo3.org/issues/61431
+#  cacheinfo:
+#    version: '0.0.1'
+#    git: 'git://git.typo3.org/TYPO3CMS/Extensions/cacheinfo.git'
+#    git_commit: e0cb6a0c962b2637416866f08d4f53c7e8401837
+# does not work with TYPO3 6.2 atm
+# @see https://forge.typo3.org/issues/61432
+#  purge:
+#    version: '0.0.1'
+#    git: 'git://git.typo3.org/TYPO3CMS/Extensions/purge.git'
+#    git_commit: f1cd6cc7b8a5e8c9201da7a1b82ca42df9ee2d8e
+#  js_css_optimizer:
+#    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/js_css_optimizer/trunk'
   linkhandler:
-    version: 1.0.5
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/linkhandler/tags/1.0.5/'
+    version: 2.0.dev
+    git: 'https://github.com/AOEpeople/linkhandler.git'
+    git commit: 29d969236e10fe4696975be8f64219eace9bffae
   direct_mail:
-    version: '3.1.2'
+    version: '4.0.0'
     git: 'git://git.typo3.org/TYPO3CMS/Extensions/direct_mail.git'
-    git_tag: '3.1.2'
-  typo3org_newsletter:
-    version: '0.0.0'
-    git: 'https://github.com/dkd/typo3orgnewsletter.git'
-    git_branch: 'master'
+    git_tag: '4.0'
+  # does not work with TYPO3 6.2 atm
+  # @see https://forge.typo3.org/issues/61464
+#  typo3org_newsletter:
+#    version: '0.0.0'
+#    git: 'https://github.com/dkd/typo3orgnewsletter.git'
+#    git_branch: 'master'
   certifications:
     version: '0.0.0'
     git: 'https://github.com/TYPO3-typo3org/t3org-certifications.git'

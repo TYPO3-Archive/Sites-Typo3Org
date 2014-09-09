@@ -1,5 +1,16 @@
 <?php
-	// internal name for system (see pagetree)
+
+/** **************************************
+ *
+ *          JUST HERE FOR REFERENCE
+ *
+ *  It does not do anything useful in TYPO3 6.2 ;)
+ *
+ *  **************************************
+ */
+
+
+// internal name for system (see pagetree)
 $TYPO3_CONF_VARS['SYS']['sitename'] = '';
 
 	// db connection data
