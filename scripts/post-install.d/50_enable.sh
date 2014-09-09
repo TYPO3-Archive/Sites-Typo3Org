@@ -23,35 +23,23 @@ done
 ABSPATH=$(cd "${0%/*}" 2>/dev/null; cd ../..; echo "${PWD}/${0##*/}")
 SOURCE_DIR=`dirname "${ABSPATH}"`
 
-
 #######################################################################
 
-getLocalConfValue() {
-	FIRST=$1
-	SECOND=$2
-
-	if [ ! -f "${SECOND}/htdocs/typo3conf/localconf.php" ] ; then
-		echo "File \"${SECOND}/htdocs/typo3conf/localconf.php\" not found" >&2
-		exit 1
-	fi
-
-	echo `grep "^\\\$${FIRST} =" ${SECOND}/htdocs/typo3conf/localconf.php | tail -1 | sed -e 's/.*= .//g' | sed -e 's/.;.*//g'`
-}
-
-#######################################################################
 if [ "${ENVIRONMENT}" = "production" ] ; then
 	# production system - do nothing
 	echo -n "Nothing to do"
 
 else
 
-	SOURCE_DB_NAME=`getLocalConfValue "typo_db" "${SOURCE_DIR}"`
-	SOURCE_DB_USER=`getLocalConfValue "typo_db_username" "${SOURCE_DIR}"`
-	SOURCE_DB_PASS=`getLocalConfValue "typo_db_password" "${SOURCE_DIR}"`
-	SOURCE_DB_HOST=`getLocalConfValue "typo_db_host" "${SOURCE_DIR}"`
+	LOCALCONF_FILENAME="${SOURCE_DIR}/htdocs/typo3conf/LocalConfiguration.php"
+	SOURCE_DB_NAME=`php "${SOURCE_DIR}/scripts/utility/getLocalConfiguration.php DB database ${LOCALCONF_FILENAME}"`
+	SOURCE_DB_USER=`php "${SOURCE_DIR}/scripts/utility/getLocalConfiguration.php DB username ${LOCALCONF_FILENAME}"`
+	SOURCE_DB_PASS=`php "${SOURCE_DIR}/scripts/utility/getLocalConfiguration.php DB password ${LOCALCONF_FILENAME}"`
+	SOURCE_DB_HOST=`php "${SOURCE_DIR}/scripts/utility/getLocalConfiguration.php DB host ${LOCALCONF_FILENAME}"`
+	SOURCE_DB_PORT=`php "${SOURCE_DIR}/scripts/utility/getLocalConfiguration.php DB port ${LOCALCONF_FILENAME}"`
 
 	echo "Give users an admin login who do not have one on production."
 	echo "Christian Zenker, Thomas Löffler, Kay Strobach, Tomas Norre, Sascha Schmidt, Björn Jacob)"
-	echo "UPDATE be_users SET disable=0, admin=1 WHERE uid IN (9, 132, 151, 153, 166, 168);" | mysql -u${SOURCE_DB_USER} -h${SOURCE_DB_HOST} -p${SOURCE_DB_PASS} ${SOURCE_DB_NAME}
+	echo "UPDATE be_users SET disable=0, admin=1 WHERE uid IN (9, 132, 151, 153, 166, 168);" | mysql -u${SOURCE_DB_USER} -h${SOURCE_DB_HOST} -P${SOURCE_DB_PORT} -p${SOURCE_DB_PASS} ${SOURCE_DB_NAME}
 	echo "done"
 fi
