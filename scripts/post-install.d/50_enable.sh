@@ -32,11 +32,11 @@ if [ "${ENVIRONMENT}" = "production" ] ; then
 else
 
 	LOCALCONF_FILENAME="${SOURCE_DIR}/htdocs/typo3conf/LocalConfiguration.php"
-	SOURCE_DB_NAME=`php "${SOURCE_DIR}/scripts/utility/getLocalConfiguration.php DB database ${LOCALCONF_FILENAME}"`
-	SOURCE_DB_USER=`php "${SOURCE_DIR}/scripts/utility/getLocalConfiguration.php DB username ${LOCALCONF_FILENAME}"`
-	SOURCE_DB_PASS=`php "${SOURCE_DIR}/scripts/utility/getLocalConfiguration.php DB password ${LOCALCONF_FILENAME}"`
-	SOURCE_DB_HOST=`php "${SOURCE_DIR}/scripts/utility/getLocalConfiguration.php DB host ${LOCALCONF_FILENAME}"`
-	SOURCE_DB_PORT=`php "${SOURCE_DIR}/scripts/utility/getLocalConfiguration.php DB port ${LOCALCONF_FILENAME}"`
+	SOURCE_DB_NAME=`php "${SOURCE_DIR}/scripts/utility/getLocalConfiguration.php" DB database ${LOCALCONF_FILENAME}`
+	SOURCE_DB_USER=`php "${SOURCE_DIR}/scripts/utility/getLocalConfiguration.php" DB username ${LOCALCONF_FILENAME}`
+	SOURCE_DB_PASS=`php "${SOURCE_DIR}/scripts/utility/getLocalConfiguration.php" DB password ${LOCALCONF_FILENAME}`
+	SOURCE_DB_HOST=`php "${SOURCE_DIR}/scripts/utility/getLocalConfiguration.php" DB host ${LOCALCONF_FILENAME}`
+	SOURCE_DB_PORT=`php "${SOURCE_DIR}/scripts/utility/getLocalConfiguration.php" DB port ${LOCALCONF_FILENAME}`
 
 	echo "Give users an admin login who do not have one on production."
 	echo "Christian Zenker, Thomas Löffler, Kay Strobach, Tomas Norre, Sascha Schmidt, Björn Jacob)"

@@ -37,6 +37,8 @@ EOF
 
 if [ "${ENVIRONMENT}" = "production" ] ; then
 	for url in $list ; do
+		echo -n "Call $url..."
 		wget --quiet --spider  $url;
+		echo " done"
 	done
 fi

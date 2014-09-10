@@ -25,9 +25,17 @@ SOURCE_DIR=`dirname "${ABSPATH}"`
 
 #######################################################################
 
-mkdir -p --mode=0775 "${SOURCE_DIR}/htdocs/fileadmin/user_upload/_temp_/importexport"
-mkdir -p --mode=0775 "${SOURCE_DIR}/htdocs/uploads/{media,pics,tf}"
-# a bug prevents TYPO3 from creating this folder when needed
-# @see http://forge.typo3.org/issues/55833
-mkdir -p --mode=0775 "${SOURCE_DIR}/htdocs/typo3temp/_processed_"
+list="
+${SOURCE_DIR}/htdocs/fileadmin/user_upload/_temp_/importexport
+${SOURCE_DIR}/htdocs/uploads/media
+${SOURCE_DIR}/htdocs/uploads/pics
+${SOURCE_DIR}/htdocs/uploads/tf
+${SOURCE_DIR}/htdocs/typo3temp/_processed_
+"
+
+for FOLDER_PATH in $list ; do
+	echo -n "Create $FOLDER_PATH... "
+	mkdir -p --mode=0775 "$FOLDER_PATH"
+	echo "done"
+done
 

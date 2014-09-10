@@ -26,8 +26,10 @@ SOURCE_DIR=`dirname "${ABSPATH}"`
 #######################################################################
 if [ "${ENVIRONMENT}" = "production" ] ; then
 	# production system - do nothing
-	echo -n "Nothing to do"
+	echo "No need to modify robots.txt on production"
 
 else
+	echo -n "Dissalow crawlers from indexing this system..."
 	echo -e "User-agent: *\nDisallow: /\n" > ${SOURCE_DIR}/htdocs/robots.txt
+	echo " done"
 fi

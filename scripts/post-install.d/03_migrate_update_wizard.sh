@@ -26,9 +26,9 @@ SOURCE_DIR=`dirname "${ABSPATH}"`
 #
 # execute the Update Wizard tasks from the Install Tool
 
-echo 'activate extension "cli_update_wizard"...'
+echo -n 'activate extension "cli_update_wizard"...'
 /usr/bin/php -q "${SOURCE_DIR}/htdocs/typo3/cli_dispatch.phpsh" extbase extension:install cli_update_wizard
-echo "done"
+echo " done"
 
 echo 'execute migration "extensionManagerTables"'
 /usr/bin/php -q "${SOURCE_DIR}/htdocs/typo3/cli_dispatch.phpsh" extbase migration:perform extensionManagerTables
@@ -48,12 +48,15 @@ echo 'execute migration "sysext_file_truncateProcessedFileTable"'
 echo 'execute migration "sysext_file_filemounts"'
 /usr/bin/php -q "${SOURCE_DIR}/htdocs/typo3/cli_dispatch.phpsh" extbase migration:perform sysext_file_filemounts
 
-echo 'updating refindex (needed for migration "sysext_file_rtemagicimages")'
-/usr/bin/php -q "${SOURCE_DIR}/htdocs/typo3/cli_dispatch.phpsh" lowlevel_refindex -e -s
+# skipping, because this takes HOURS!
+# Let's just hope the refindex is up-to-date and everything will go well ;)
+# @see https://forge.typo3.org/issues/61509
+#echo 'updating refindex (needed for migration "sysext_file_rtemagicimages")'
+#/usr/bin/php -q "${SOURCE_DIR}/htdocs/typo3/cli_dispatch.phpsh" lowlevel_refindex -e -s
 
 echo 'execute migration "sysext_file_rtemagicimages"'
 /usr/bin/php -q "${SOURCE_DIR}/htdocs/typo3/cli_dispatch.phpsh" extbase migration:perform sysext_file_rtemagicimages
 
-echo 'deactivate extension "cli_update_wizard"...'
+echo -n 'deactivate extension "cli_update_wizard"...'
 /usr/bin/php -q "${SOURCE_DIR}/htdocs/typo3/cli_dispatch.phpsh" extbase extension:uninstall cli_update_wizard
-echo "done"
+echo " done"
