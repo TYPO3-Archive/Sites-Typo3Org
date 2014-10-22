@@ -8,7 +8,7 @@ svn_method: checkout
 # instead of "git_branch" the keywords "git_tag" and "git_commit" could also be used
 typo3:
   git: 'https://github.com/TYPO3-typo3org/TYPO3.CMS.git'
-  git_branch: t3o/TYPO3_4-5-34
+  git_branch: t3o/TYPO3_4-5-37
   dir: typo3_src-4.5
 # The migrator helps to install the TYPO3 project on different environments.
 # It can change settings in localconf.php, change TypoScript Constants and Setup, or change database records
