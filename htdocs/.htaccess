@@ -154,6 +154,7 @@ RewriteRule ^typo3/gfx/ - [L]
 RewriteRule ^typo3/sysext/t3skin - [L]
 RewriteRule ^typo3/sysext/workspaces/Resources/Public - [L]
 RewriteRule ^typo3/mod.php - [L]
+RewriteRule ^typo3/clear.gif - [L]
 RewriteRule ^typo3conf/ext/dam/mod_file/.* - [L]
 
 # block access to core and third party extension configuration files
