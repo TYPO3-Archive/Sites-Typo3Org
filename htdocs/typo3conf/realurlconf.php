@@ -746,6 +746,7 @@ $realurlconf = array (
 		'501' => 'securityBulletins',
 		'502' => 'securityBulletins',
 		'762' => 'securityBulletins',
+		'881' => 'securityBulletins',
 		'578' => 'certification',
 	),
 
