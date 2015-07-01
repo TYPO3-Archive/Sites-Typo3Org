@@ -518,7 +518,7 @@ extensions:
     git: 'https://github.com/kaystrobach/TYPO3.voice.git'
     git_commit: '457dfe93d42eed5a2f4f4f423060cfdfee0bbc85'
   t3o_membership:
-    version: '1.0.0'
+    version: '1.0.1'
     git: 'https://github.com/TYPO3-typo3org/t3o_membership.git'
     git_branch: 'master'
 packaging:
