@@ -153,6 +153,10 @@ backup:
           system: production
         tx_randombanners_domain_model_banner:
           system: production
+        tx_t3omembership_domain_model_member:
+          system: production
+        tx_t3omembership_domain_model_membership:
+          system: production
         sys_ter:
           system: production
         tx_pastecode_code:
