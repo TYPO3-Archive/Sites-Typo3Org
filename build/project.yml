@@ -295,7 +295,7 @@ extensions:
   additional_reports:
     version: 2.7.1
     git: 'https://github.com/Apen/additional_reports.git'
-    git_commit: 'd0f2cbe47a906e703879cd18d1c22d6f3b3ee09f'
+    git_branch: 'master'
   t3org_base:
     version: 0.1.1
     git: 'git@github.com:TYPO3-typo3org/t3org_base.git'
