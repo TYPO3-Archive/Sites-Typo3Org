@@ -540,8 +540,9 @@ extensions:
   js_css_optimizer:
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/js_css_optimizer/trunk'
   linkhandler:
-    version: 1.0.5
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/linkhandler/tags/1.0.5/'
+    version: '1.0.5'
+    git: 'https://git.typo3.org/TYPO3CMS/Extensions/linkhandler.git'
+    git_tag: '1.0.5'
   direct_mail:
     version: '3.1.2'
     git: 'git://git.typo3.org/TYPO3CMS/Extensions/direct_mail.git'
