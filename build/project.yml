@@ -483,7 +483,8 @@ extensions:
       dependency: true
   tt_address:
     version: 2.2.1
-    svn: 'http://svn.t3o.typo3.org/extensions/ter/tt_address/trunk'
+    git: 'https://github.com/TYPO3-typo3org/tt_address.git'
+    git_branch: master
   cz_simple_cal:
     version: 0.0.0
     git: 'https://github.com/TYPO3-typo3org/cz_simple_cal.git'
