@@ -357,7 +357,8 @@ extensions:
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/dam/dam_index/tags/dam_index_1-2-0/'
   css_filelinks:
     version: 0.2.19
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/css_filelinks/trunk@45907'
+    git: 'https://github.com/TYPO3-typo3org/css_filelinks.git'
+    git_branch: 'master'
   dam_filelinks:
     version: 0.3.21
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/dam_filelinks/trunk@45907'
