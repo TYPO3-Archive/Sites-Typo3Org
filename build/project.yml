@@ -333,7 +333,8 @@ extensions:
     git_tag: '1_8_0'
   static_info_tables:
     version: 2.4.0
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/static_info_tables/trunk@71423'
+    git: 'https://git.typo3.org/TYPO3CMS/Extensions/static_info_tables.git'
+    git_commit: '9986d78054899468644b1e2f84b30857af0ae95a'
     skip:
       dependency: true
   cleartypo3cache:
