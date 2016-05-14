@@ -476,8 +476,9 @@ extensions:
     skip:
       dependency: true
   randombanners:
-    version: 0.0.1
-    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/randombanners/trunk'
+    version: 0.0.2
+    git: 'https://github.com/TYPO3-typo3org/randombanners.git'
+    git_tag: '0.0.2'
     skip:
       dependency: true
   tt_address:
