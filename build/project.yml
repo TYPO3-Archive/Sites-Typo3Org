@@ -503,7 +503,8 @@ extensions:
     git_branch: 'master'
   geshilib:
     version: 1.0.0
-    svn: 'http://svn.t3o.typo3.org/extensions/ter/geshilib/official/1.0.0'
+    git: 'https://github.com/TYPO3-typo3org/geshilib.git'
+    git_branch: 'master'
   pastecode:
     version: 0.0.2
     svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/pastecode/trunk'
