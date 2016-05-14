@@ -528,8 +528,9 @@ extensions:
     skip:
       dependency: true
   ed_damcatsort:
-    version: 0.0.0
-    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/ed_damcatsort/trunk'
+    version: 0.1.0
+    git: 'https://github.com/TYPO3-typo3org/ed_damcatsort.git'
+    git_branch: 'master'
   cacheinfo:
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/cacheinfo/trunk'
   purge:
