@@ -346,7 +346,8 @@ extensions:
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/dam/dam/tags/dam_1-2-0/'
   dam_ttcontent:
     version: 1.2.0
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/dam/dam_ttcontent/tags/dam_ttcontent_1-2-0/'
+    svn: 'https://git.typo3.org/TYPO3CMS/Extensions/dam_ttcontent.git'
+    git_tag: 'dam_ttcontent_1-2-0'
   dam_catedit:
     version: 1.2.0
     svn: 'https://git.typo3.org/TYPO3CMS/Extensions/dam_catedit.git'
