@@ -511,7 +511,8 @@ extensions:
     git_branch: 'master'
   tabs4templavoila:
     version: 0.2.0
-    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/tabs4templavoila/trunk'
+    git: 'https://github.com/TYPO3-typo3org/tabs4templavoila.git'
+    git_branch: 'master'
   t3o_cla:
     version: 0.2.0
     svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/t3o_cla/trunk'
