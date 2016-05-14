@@ -458,10 +458,11 @@ extensions:
     git: 'https://github.com/TYPO3-typo3org/comments.git'
     git_tag: '1_5_3'
   t3org_comments:
-    version: 0.0.0
-    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/t3org_comments/trunk/'
+    version: 0.0.1
+    git: 'https://github.com/TYPO3-typo3org/t3org_comments.git'
     skip:
       dependency: true
+    git_branch: 'master'
   t3org_flickrfeed:
     version: 0.0.0
     git: 'https://github.com/TYPO3-typo3org/t3org_flickrfeed.git'
