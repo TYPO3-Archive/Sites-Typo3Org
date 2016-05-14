@@ -349,15 +349,15 @@ extensions:
     git_tag: 'dam_1-2-0'
   dam_ttcontent:
     version: 1.2.0
-    svn: 'https://git.typo3.org/TYPO3CMS/Extensions/dam_ttcontent.git'
+    git: 'https://git.typo3.org/TYPO3CMS/Extensions/dam_ttcontent.git'
     git_tag: 'dam_ttcontent_1-2-0'
   dam_catedit:
     version: 1.2.0
-    svn: 'https://git.typo3.org/TYPO3CMS/Extensions/dam_catedit.git'
+    git: 'https://git.typo3.org/TYPO3CMS/Extensions/dam_catedit.git'
     git_tag: 'dam_catedit_1-2-0'
   dam_index:
     version: 1.2.0
-    svn: 'https://git.typo3.org/TYPO3CMS/Extensions/dam_index.git'
+    git: 'https://git.typo3.org/TYPO3CMS/Extensions/dam_index.git'
     git_tag: 'dam_index_1-2-0'
   css_filelinks:
     version: 0.2.19
