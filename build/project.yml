@@ -532,7 +532,8 @@ extensions:
     git: 'https://github.com/TYPO3-typo3org/ed_damcatsort.git'
     git_branch: 'master'
   cacheinfo:
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/cacheinfo/trunk'
+    git: 'https://git.typo3.org/TYPO3CMS/Extensions/cacheinfo.git'
+    git_commit: 'e0cb6a0c962b2637416866f08d4f53c7e8401837'
   purge:
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/purge/trunk'
   js_css_optimizer:
