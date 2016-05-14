@@ -323,7 +323,8 @@ extensions:
     git_branch: 'master'
   naw_single_signon:
     version: 2.0.0
-    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/naw_single_signon'
+    git: 'https://github.com/TYPO3-typo3org/naw_single_signon.git'
+    git_branch: 'master'
   realurl:
     git: 'git://github.com/tolleiv/Realurl.git'
     git_branch: aoe_modifications
