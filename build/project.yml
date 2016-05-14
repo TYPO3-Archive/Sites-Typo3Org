@@ -318,8 +318,9 @@ extensions:
     git: 'https://github.com/TYPO3-typo3org/kb_tv_cont_slide.git'
     git_branch: 'master'
   lowlevel_scheduler_task:
-    version: 0.1.3.dev
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/lowlevel_scheduler_task/tags/0.1.2'
+    version: 0.1.2
+    git: 'https://github.com/TYPO3-typo3org/lowlevel_scheduler_task.git'
+    git_branch: 'master'
   naw_single_signon:
     version: 2.0.0
     svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/naw_single_signon'
