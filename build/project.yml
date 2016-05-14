@@ -394,7 +394,8 @@ extensions:
     git_branch: 'master'
   pmkshadowbox:
     version: 3.2.1
-    svn: 'http://svn.t3o.typo3.org/extensions/ter/pmkshadowbox/tags/3.2.1'
+    git: 'https://github.com/TYPO3-typo3org/pmkshadowbox.git'
+    git_branch: 'master'
   t3org_feedparser:
     version: 0.1.0
     git: 'https://github.com/TYPO3-typo3org/t3org_feedparser.git'
