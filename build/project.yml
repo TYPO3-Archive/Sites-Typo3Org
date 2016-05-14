@@ -411,7 +411,8 @@ extensions:
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/pagebrowse/trunk'
   pagebrowse_tt_news:
     version: 0.1.0
-    svn: 'http://svn.t3o.typo3.org/extensions/ter/pagebrowse_tt_news/tags/0.1.0'
+    git: 'https://github.com/TYPO3-typo3org/pagebrowse_tt_news.git'
+    git_tag: '0.1.0'
   solr:
     version: 2.8.3
     git: 'git://git.typo3.org/TYPO3CMS/Extensions/solr.git'
