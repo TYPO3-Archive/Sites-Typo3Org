@@ -507,7 +507,8 @@ extensions:
     git_branch: 'master'
   pastecode:
     version: 0.0.2
-    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/pastecode/trunk'
+    git: 'https://github.com/TYPO3-typo3org/pastecode.git'
+    git_branch: 'master'
   tabs4templavoila:
     version: 0.2.0
     svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/tabs4templavoila/trunk'
