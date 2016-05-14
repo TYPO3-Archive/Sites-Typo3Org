@@ -515,7 +515,8 @@ extensions:
     git_branch: 'master'
   t3o_cla:
     version: 0.2.0
-    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/t3o_cla/trunk'
+    git: 'https://github.com/TYPO3-typo3org/t3o_cla.git'
+    git_branch: 'master'
   ods_facebook:
     version: 0.0.0
     svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/ods_facebook/trunk'
