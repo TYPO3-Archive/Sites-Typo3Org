@@ -382,7 +382,8 @@ extensions:
       dependency: true
   ed_transliteration:
     version: 1.1.7
-    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/ed_transliteration/trunk'
+    git: 'https://github.com/TYPO3-typo3org/ed_transliteration.git'
+    git_branch: 'master'
   ed_tv:
     version: 0.0.3
     svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/ed_tv/trunk'
