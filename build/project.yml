@@ -408,7 +408,8 @@ extensions:
     git_branch: 'master'
   pagebrowse:
     version: 1.3.0
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/pagebrowse/trunk'
+    git: 'https://github.com/TYPO3-typo3org/pagebrowse.git'
+    git_branch: 'master'
   pagebrowse_tt_news:
     version: 0.1.0
     git: 'https://github.com/TYPO3-typo3org/pagebrowse_tt_news.git'
