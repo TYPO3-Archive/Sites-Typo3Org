@@ -386,7 +386,7 @@ extensions:
     git_branch: 'master'
   ed_tv:
     version: 0.0.3
-    svn: 'https://github.com/TYPO3-typo3org/ed_tv.git'
+    git: 'https://github.com/TYPO3-typo3org/ed_tv.git'
     git_branch: 'master'
   t3o_userimage:
     version: 0.2.2
