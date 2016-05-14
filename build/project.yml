@@ -340,7 +340,8 @@ extensions:
     git: 'https://github.com/TYPO3-typo3org/cleartypo3cache.git'
     git_branch: 'master'
   cachecleaner:
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/cachecleaner/trunk@35983'
+    git: 'https://github.com/TYPO3-typo3org/cachecleaner.git'
+    git_branch: 'master'
   dam:
     version: 1.2.0
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/dam/dam/tags/dam_1-2-0/'
