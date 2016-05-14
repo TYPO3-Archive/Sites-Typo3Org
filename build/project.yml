@@ -421,8 +421,9 @@ extensions:
     git: 'git://git.typo3.org/TYPO3CMS/Extensions/solr_redmine.git'
     git_commit: '83d566c129410c0063b4bf10fb81a51de4acad4f'
   donation:
-    version: 1.2.0
-    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/donation/trunk'
+    version: 1.3.0
+    git: 'https://github.com/TYPO3-typo3org/donation.git'
+    git_tag: '1.3.0'
   powermail:
     version: 1.6.11
     git: 'git://git.typo3.org/TYPO3CMS/Extensions/powermail.git'
