@@ -391,7 +391,8 @@ extensions:
       dependency: true
   ttnews_irre:
     version: 0.2.0
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/ttnews_irre/trunk'
+    git: 'https://github.com/TYPO3-typo3org/ttnews_irre.git'
+    git_branch: 'master'
   pagebrowse:
     version: 1.3.0
     svn: 'https://svn.typo3.org/TYPO3v4/Extensions/pagebrowse/trunk'
