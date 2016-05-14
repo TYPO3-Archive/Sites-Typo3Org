@@ -369,7 +369,8 @@ extensions:
     git_branch: 'master'
   dam_tv_connector:
     version: 0.2.0
-    svn: 'https://svn.typo3.org/TYPO3v4/Extensions/dam_tv_connector/trunk@45907'
+    git: 'https://github.com/TYPO3-typo3org/dam_tv_connector.git'
+    git_branch: 'master'
   dam_ttnews:
     version: 0.1.12
     svn: 'http://svn.t3o.typo3.org/extensions/ter/dam_ttnews/offcial/0.1.12'
