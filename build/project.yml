@@ -289,7 +289,8 @@ backup:
 extensions:
   tt_news:
     version: 3.5.2
-    svn: 'http://svn.t3o.typo3.org/extensions/projects/t3org/tt_news/tags/3.5.2/'
+    git: 'https://github.com/TYPO3-typo3org/tt_news.git'
+    git_tag: '3.5.2'
     skip:
       dependency: true
   additional_reports:
